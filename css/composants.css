@@ -1,0 +1,38 @@
+.Header {
+}
+.ambilights {
+    width: 1030px;
+    height: 408px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.ambilightsOrange {
+    width: 430.845px;
+    height: 244.671px;
+    position: absolute;
+    left: -535.845px;
+    bottom: -535.879px;
+    border-radius: 430.845px;
+    background: rgba(255, 184, 0, 0.43);
+    filter: blur(120px);
+}
+.ambilightsRouge { 
+
+}
+.ambilightsBleu {
+    width: 575.775px;
+    height: 229.136px;
+    position: absolute;
+    left: -1155px;
+    bottom: -516.568px;
+    border-radius: 575.775px;
+    background: rgba(63, 100, 233, 0.43);
+    filter: blur(120px);
+}
+.navLight {
+    width: 1030px;
+    height: 60px;
+    border-radius: 30px;border: 1px solid rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.25);
+}
