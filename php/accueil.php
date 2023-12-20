@@ -9,6 +9,7 @@
 <body>
 
     <?php include 'php/composants/header.html'; ?>
+    <?php include 'php/composants/footer.html'; ?>
 
 </body>
 </html>

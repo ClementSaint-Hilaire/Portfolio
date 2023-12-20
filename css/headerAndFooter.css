@@ -1,0 +1,152 @@
+:root {
+    --blanc : #F0F0F0;
+    --noir : #0D0D0D;
+    font-family: Open Sans Hebrew;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--blanc);
+    color: var(--noir);
+  }
+
+/** >> header**/
+.Header {
+    width: 100%;
+    height: 300px;
+    top: 0px;
+    position: relative;
+}
+/** >> top lights**/
+.topAmbilights {
+    width: 1030px;
+    height: 408px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+.topAmbilightsOrange {
+    width: 430.845px;
+    height: 244.671px;
+    position: absolute;
+    left: 290px;
+    bottom: 100px;
+    border-radius: 430.845px;
+    background: rgba(255, 184, 0, 0.33);
+    filter: blur(120px);
+}
+.topAmbilightsRouge { 
+    width: 697px;
+    height: 400px;
+    position: absolute;
+    left: 550px;
+    bottom: 75px;
+    border-radius: 697px;
+    background: rgba(233, 63, 63, 0.33);
+    filter: blur(120px);
+}
+.topAmbilightsBleu {
+    width: 575.775px;
+    height: 229.136px;
+    position: absolute;
+    left: 1020px;
+    bottom: 100px;
+    border-radius: 575.775px;
+    background: rgba(63, 100, 233, 0.33);
+    filter: blur(120px);
+}
+/** << top lights**/
+.navLight {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 85px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+}
+.rectangleNavbar {
+    width: 1030px;
+    height: 60px;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.25);
+}
+.textNavbar {
+    display: flex;
+    width: 613px;
+    height: 60px;
+    align-items: center;
+    gap: 32px;
+    position: absolute;
+    left: 35px;
+    background: none;
+}
+.logoRSNavbar {
+    display: flex;
+    width: 194px;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    right: 29px;
+    background: none;
+}
+.separateurVertical {
+    width: 1px;
+    height: 24px;
+    background: rgba(0, 0, 0, 0.26);
+}
+.logoRSNavbar a { 
+    width: 24px;
+    height: 24px;
+    color : var(--noir);
+    background: none;
+}
+.logoRSNavbar a svg { 
+    width: 24px;
+    height: 24px;
+    color : var(--noir);
+    background: none;
+}
+.textNavbar h1 {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color : var(--noir);
+    margin: -4px;
+    background: transparent;
+
+}
+.textNavbar h2 {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color : var(--noir);
+    background: transparent;
+}
+/** << header**/
+
+/** >> footer**/
+.Footer  {
+    width: 100%;
+    height: 400px;
+    bottom: 0px;
+    background-color: aqua;
+    position: relative;
+}
+
+.bottomAmbilight {
+    display: flex;
+    width: 1000px;
+    height: 381px;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-shrink: 0;
+}
+/** << footer**/
