@@ -9,16 +9,14 @@
     box-sizing: border-box;
     background-color: var(--blanc);
     color: var(--noir);
-  }
+}
 
-/** >> header**/
 .Header {
     width: 100%;
     height: 300px;
     top: 0px;
     position: relative;
 }
-/** >> top lights**/
 .topAmbilights {
     width: 1030px;
     height: 408px;
@@ -57,7 +55,6 @@
     background: rgba(63, 100, 233, 0.33);
     filter: blur(120px);
 }
-/** << top lights**/
 .navLight {
     display: flex;
     align-items: center;
@@ -130,23 +127,3 @@
     color : var(--noir);
     background: transparent;
 }
-/** << header**/
-
-/** >> footer**/
-.Footer  {
-    width: 100%;
-    height: 400px;
-    bottom: 0px;
-    background-color: aqua;
-    position: relative;
-}
-
-.bottomAmbilight {
-    display: flex;
-    width: 1000px;
-    height: 381px;
-    justify-content: space-between;
-    align-items: flex-end;
-    flex-shrink: 0;
-}
-/** << footer**/
