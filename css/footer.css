@@ -13,85 +13,89 @@
 
 .Footer  {
     width: 100%;
-    min-height: 400px;
-    height: 400px;
-    max-height: 400px;
+    height: 400px; 
     bottom: 0px;
-    background-color: transparent;
     position: relative;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
 }
 .ligneHorizontale {
     position: absolute;
     width: 100%;
     height: 1px;
+    top: 0;
     background: #808080;
-}
-.Footer h1 {
-    font-size: 120px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    background: transparent;
-    display: flex;
-    padding-top: 93px;
-    padding-left: 105px;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 315px;
-    z-index: 20;
+    z-index: 20px;
 }
 .bottomAmbilight {
-    position: absolute;
-    bottom: -100px;
-    left: 0px; 
+
+    max-width: 1024px;
+    height: 408px;
     display: flex;
-    width: 100%;
-    height: 381px;
-    justify-content: space-between;
-    align-items: flex-end;
-    flex-shrink: 0;
-    background: none;
+    justify-content: center;
+    align-items: center;
     z-index: 10;
 }
 .bottomAmbilightOrange {
-    width: 430.845px;
-    height: 244.671px;
-    position: absolute;
-    left: 290px;
-    bottom: 100px;
-    border-radius: 430.845px;
+    width: 775px;
+    height: 244px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 20px;
+    border-radius: 430px;
     background: rgba(255, 184, 0, 0.33);
     filter: blur(120px);
 }
 .bottomAmibilightRouge { 
-    width: 697px;
+    width: 875px;
     height: 400px;
     position: absolute;
-    left: 550px;
-    bottom: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 697px;
     background: rgba(233, 63, 63, 0.33);
     filter: blur(120px);
 }
 .bottomAmbilightBleu {
-    width: 575.775px;
-    height: 229.136px;
-    position: absolute;
-    left: 1020px;
-    bottom: 100px;
-    border-radius: 575.775px;
+    width: 775px;
+    height: 229px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 575px;
     background: rgba(63, 100, 233, 0.33);
     filter: blur(120px);
+    top: 20px;
+}
+.footerContainer {
+    max-width: 1024px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+.Footer h1 {
+    position: relative;
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: transparent;
+    padding-top: 93px;
+    z-index: 20;
 }
 .listesAnnexe {
+    position: relative;
     background: transparent;
     display: inline-flex;
     align-items: flex-start;
     gap: 138px;
     padding-top: 60px;
-    padding-left: 500px;
+    /*padding-left: 450px;*/
     text-decoration: none;
     z-index: 20;
 }
@@ -127,18 +131,17 @@
     text-decoration: none;
 }
 .credit {
+    position: absolute;  
     background-color: transparent;
     display: flex;
     align-items: flex-end;
     flex-direction: row;
     justify-content: space-between;  
-    position: absolute;  
     bottom: 0;
-    left: 0;
     width: 100%;
+    max-width: 1024px;
     height: 15px;
-    padding-left: 10%;
-    padding-right: 10%;
+    z-index: 20;
 }
 .credit p {
     color: rgba(128, 128, 128, 0.25);
@@ -147,3 +150,14 @@
     font-weight: 400;
     background-color: transparent;
 }
+.vide {
+    width: 500px;
+}
+
+
+/*---------------RESPONSIVE---------------*/
+@media screen and (max-width: 768px) {
+     .topAmbilightsRouge {
+        height: auto;
+      }
+   }

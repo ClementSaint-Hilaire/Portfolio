@@ -20,7 +20,7 @@
     justify-content: center;
 }
 .topAmbilights {
-    max-width: 1100px;
+    max-width: 1024px;
     height: 408px;
     display: flex;
     justify-content: center;
@@ -76,7 +76,7 @@
     background: transparent;
 }
 .rectangleNavbar {
-    width: 1030px;
+    width: 1024px;
     height: 60px;
     border-radius: 30px;
     border: 1px solid rgba(255, 255, 255, 0.25);
