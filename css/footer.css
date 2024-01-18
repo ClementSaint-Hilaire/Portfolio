@@ -13,14 +13,17 @@
 
 .Footer  {
     width: 100%;
+    min-height: 400px;
     height: 400px;
+    max-height: 400px;
     bottom: 0px;
-    background-color: aqua;
+    background-color: transparent;
     position: relative;
     display: flex;
     align-items: flex-start;
 }
 .ligneHorizontale {
+    position: absolute;
     width: 100%;
     height: 1px;
     background: #808080;
@@ -36,16 +39,23 @@
     padding-left: 105px;
     justify-content: space-between;
     align-items: center;
+    margin-left: 315px;
+    z-index: 20;
 }
 .bottomAmbilight {
+    position: absolute;
+    bottom: -100px;
+    left: 0px; 
     display: flex;
-    width: 1000px;
+    width: 100%;
     height: 381px;
     justify-content: space-between;
     align-items: flex-end;
     flex-shrink: 0;
+    background: none;
+    z-index: 10;
 }
-.bottomAmbilightsOrange {
+.bottomAmbilightOrange {
     width: 430.845px;
     height: 244.671px;
     position: absolute;
@@ -55,7 +65,7 @@
     background: rgba(255, 184, 0, 0.33);
     filter: blur(120px);
 }
-.bottomAmbilightsRouge { 
+.bottomAmibilightRouge { 
     width: 697px;
     height: 400px;
     position: absolute;
@@ -65,7 +75,7 @@
     background: rgba(233, 63, 63, 0.33);
     filter: blur(120px);
 }
-.bottomAmbilightsBleu {
+.bottomAmbilightBleu {
     width: 575.775px;
     height: 229.136px;
     position: absolute;
@@ -81,9 +91,9 @@
     align-items: flex-start;
     gap: 138px;
     padding-top: 60px;
-    padding-left: 800px;
+    padding-left: 500px;
     text-decoration: none;
-
+    z-index: 20;
 }
 .listesAnnexe ul {
     background: transparent;
@@ -115,5 +125,25 @@
     font-weight: 400;
     line-height: normal;
     text-decoration: none;
-
+}
+.credit {
+    background-color: transparent;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: space-between;  
+    position: absolute;  
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.credit p {
+    color: rgba(128, 128, 128, 0.25);
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    background-color: transparent;
 }

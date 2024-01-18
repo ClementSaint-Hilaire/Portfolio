@@ -1,7 +1,6 @@
 :root {
     --blanc : #F0F0F0;
     --noir : #0D0D0D;
-    font-family: Open Sans Hebrew;
 }
 *{
     padding: 0;
@@ -16,42 +15,53 @@
     height: 300px;
     top: 0px;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .topAmbilights {
-    width: 1030px;
+    max-width: 1100px;
     height: 408px;
     display: flex;
     justify-content: center;
-    justify-content: space-between;
     align-items: center;
 }
 .topAmbilightsOrange {
-    width: 430.845px;
-    height: 244.671px;
-    position: absolute;
-    left: 290px;
-    bottom: 100px;
-    border-radius: 430.845px;
+    width: 775px;
+    height: 244px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -100px;
+    border-radius: 430px;
     background: rgba(255, 184, 0, 0.33);
     filter: blur(120px);
 }
 .topAmbilightsRouge { 
-    width: 697px;
+    width: 875px;
     height: 400px;
     position: absolute;
-    left: 550px;
-    bottom: 75px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 697px;
     background: rgba(233, 63, 63, 0.33);
     filter: blur(120px);
+    top: 0px;
 }
 .topAmbilightsBleu {
-    width: 575.775px;
-    height: 229.136px;
-    position: absolute;
-    left: 1020px;
-    bottom: 100px;
-    border-radius: 575.775px;
+    width: 775px;
+    height: 229px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -100px;
+    border-radius: 575px;
     background: rgba(63, 100, 233, 0.33);
     filter: blur(120px);
 }
@@ -60,9 +70,9 @@
     align-items: center;
     gap: 10px;
     position: absolute;
-    top: 85px;
+    top: 50px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     background: transparent;
 }
 .rectangleNavbar {
@@ -127,3 +137,18 @@
     color : var(--noir);
     background: transparent;
 }
+
+/*---------------RESPONSIVE---------------*/
+@media screen and (max-width: 768px) {
+    .navLight {
+       position: static;
+       top: auto;
+       left: auto;
+       transform: none;
+       margin: 0 auto;
+       max-width: 100%;
+     }
+     .topAmbilightsRouge {
+        height: auto;
+      }
+   }
