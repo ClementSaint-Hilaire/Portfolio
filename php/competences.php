@@ -8,7 +8,6 @@
     <title>csh</title>
 </head>
 <body>
-    
     <?php include 'composants/header.html'; ?>
 
     <section class="competences">
@@ -28,9 +27,70 @@
                 </div>
             </div>
         </div>
+
+       
     </section>
 
-    <?php include 'composants/footer.html'; ?>
+    <div class="titreCarrousel">
+            <div class="carrousel">
+                <img src="../images/appText.svg">
+                <img src="../images/rond.svg">
+                <img src="../images/logicielText.svg">
+                <img src="../images/rond.svg">
+            </div>
+            <div class="carrousel">
+                <img src="../images/appText.svg">
+                <img src="../images/rond.svg">
+                <img src="../images/logicielText.svg">
+                <img src="../images/rond.svg">
+            </div>            
+            <div class="carrousel">
+                <img src="../images/appText.svg">
+                <img src="../images/rond.svg">
+                <img src="../images/logicielText.svg">
+                <img src="../images/rond.svg">
+            </div>
+    </div>
+
+    <?php
+        try {
+            $db = new PDO('mysql:host=localhost;dbname=portefoliocshdb;charset=utf8;', 'root', '');
+            $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        } catch (PDOException $e) {
+            die('Erreur de connexion à la bdd : ' . $e->getMessage());
+        }
+
+        $query = $db->prepare("SELECT * FROM appcard");
+
+        if ($query->execute()) {
+            $query->bindColumn('nom', $nom);
+            $query->bindColumn('categorie', $categorie);
+            $query->bindColumn('imglink', $imglink);
+            
+            echo '<div class="biblioApps">';
+
+                while ($query->fetch(PDO::FETCH_BOUND)) {
+                        echo '<div class="cardApp">';
+                            echo '<img src="' . htmlspecialchars($imglink) . '" alt="">';
+                            echo '<div class="cardText">';
+                                echo '<h1>' . htmlspecialchars($nom) . '</h1>';
+                                echo '<h2>' . htmlspecialchars($categorie) . '</h2>';
+                            echo '</div>';
+                        echo '</div>';
+                
+                }
+                
+            echo '</div>';
+
+        } else {
+            echo "Erreur lors de l'exécution de la requête : " . $query->errorInfo()[2];
+        }
+
+        $db = null;
+    ?>
+
+
+        <?php include 'composants/footer.html'; ?>
 
 </body>
 </html>

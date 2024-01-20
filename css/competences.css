@@ -17,16 +17,16 @@
     font-family: 'Chillax-Variable';
 }
 
-
 .competences {
     width: 100%;
     max-width: 1024px;
-    height: 80vh;
+    height: fit-content;
     position: relative;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     background: transparent;
+
 }
 .titreEtGraphique {
     position: relative;
@@ -61,6 +61,7 @@ span {
     justify-content: center;
     align-items: center;
     padding: 77px 30px;
+    margin: 0 0 200px 0;
 }
 .fondGraphique {
     width: 1024px;
@@ -85,7 +86,6 @@ span {
 }
 img {
     background: transparent;
-
 }
 .titre {
     display: flex;
@@ -98,4 +98,84 @@ img {
     line-height: normal;
     letter-spacing: 2.56px;
     background: transparent;
+}
+.titreCarrousel {
+    position: relative;
+    padding-top: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 100px 0;
+    white-space: nowrap;
+}
+.carrousel {
+    display: flex;
+    animation: 15s slide infinite linear;
+}
+.carrousel img {
+    margin: 0 40px
+}
+.biblioApps {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1024px;
+    margin: 200px auto;
+}
+.cardApp {
+    flex-grow: 1;
+    flex-basis: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 200px;
+    min-height: 200px;
+    height: fit-content;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.25);
+    padding: 0 13px;
+    margin: 20px 28px;
+}
+.cardApp img {
+    width: 100px;
+    height: 100px;
+    margin: 18px auto;
+    background: transparent;
+}
+.cardText {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+}
+.cardText h1 {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: transparent;
+}
+.cardText h2 {
+    color: var(--gris);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    background: transparent;
+}
+
+
+
+
+/*-------------animation-------------*/
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
 }
