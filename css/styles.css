@@ -1,2 +1,14 @@
 @import url('chillax.css');
 
+:root {
+    --blanc : #F0F0F0;
+    --noir : #0D0D0D;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--blanc);
+    color: var(--noir);
+    font-family: 'Chillax-Variable';
+}

@@ -1,7 +1,8 @@
+@import url('chillax.css');
+
 :root {
     --blanc : #F0F0F0;
     --noir : #0D0D0D;
-    font-family: Open Sans Hebrew;
 }
 *{
     padding: 0;
@@ -9,7 +10,9 @@
     box-sizing: border-box;
     background-color: var(--blanc);
     color: var(--noir);
+    font-family: 'Chillax-Variable';
 }
+
 
 .Footer  {
     width: 100%;
@@ -96,7 +99,6 @@
     align-items: flex-start;
     gap: 138px;
     padding-top: 60px;
-    /*padding-left: 450px;*/
     text-decoration: none;
     z-index: 20;
 }
