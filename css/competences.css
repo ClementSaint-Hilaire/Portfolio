@@ -1,0 +1,181 @@
+@import url('chillax.css');
+
+:root {
+    --blanc : #F0F0F0;
+    --noir : #0D0D0D;
+    --gris : #808080;
+    --neomorphDrop : 18px 18px 30px 0px #D1D9E6, -18px -18px 30px 0px #FFF;
+    --titre : 53px;
+    --soustitre : 15px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--blanc);
+    color: var(--noir);
+    font-family: 'Chillax-Variable';
+}
+
+.competences {
+    width: 100%;
+    max-width: 1024px;
+    height: fit-content;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background: transparent;
+
+}
+.titreEtGraphique {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+}
+.titreEtGraphique h1 {
+    font-size: var(--titre);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: transparent;
+}
+span {
+    color: var(--gris);
+    background: transparent;
+}
+.titreEtGraphique h2 {
+    font-size: var(--soustitre);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 70px;
+    background: transparent;
+}
+.graphique {
+    width: 1024px;
+    height: 376px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 77px 30px;
+    margin: 0 0 200px 0;
+}
+.fondGraphique {
+    width: 1024px;
+    height: 376px;
+    border-radius: 46px;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: var(--neomorphDrop);
+    backdrop-filter: blur(50px);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 77px 30px;
+}
+.statistiquesEtTitre {
+    position: relative;
+    display: flex;
+    background: transparent;
+}
+.langages {
+    background: transparent;
+}
+img {
+    background: transparent;
+}
+.titre {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: justify;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.56px;
+    background: transparent;
+}
+.titreCarrousel {
+    position: relative;
+    padding-top: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 100px 0;
+    white-space: nowrap;
+}
+.carrousel {
+    display: flex;
+    animation: 15s slide infinite linear;
+}
+.carrousel img {
+    margin: 0 40px
+}
+.biblioApps {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1024px;
+    margin: 200px auto;
+}
+.cardApp {
+    flex-grow: 1;
+    flex-basis: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 200px;
+    min-height: 200px;
+    height: fit-content;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.25);
+    padding: 0 13px;
+    margin: 20px 28px;
+}
+.cardApp img {
+    width: 100px;
+    height: 100px;
+    margin: 18px auto;
+    background: transparent;
+}
+.cardText {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+}
+.cardText h1 {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: transparent;
+}
+.cardText h2 {
+    color: var(--gris);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    background: transparent;
+}
+
+
+
+
+/*-------------animation-------------*/
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}

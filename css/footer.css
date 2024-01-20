@@ -22,6 +22,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 .ligneHorizontale {
     position: absolute;
@@ -39,7 +40,7 @@
     align-items: center;
     z-index: 10;
     position: absolute;
-    bottom: -30px;
+    bottom: -150px;
 }
 .bottomAmbilightOrange {
     width: 775px;
@@ -78,6 +79,7 @@
 }
 .footerContainer {
     max-width: 1024px;
+    height: fit-content;
     display: flex;
     position: relative;
     justify-content: space-between;
