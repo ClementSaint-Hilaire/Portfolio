@@ -1,1 +1,4 @@
-<h1>tu fais quoi là ?</h1>
+<?php
+header("Location: ./php/accueil.php");
+exit();
+?>
