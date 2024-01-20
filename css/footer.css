@@ -26,16 +26,17 @@
     height: 1px;
     top: 0;
     background: #808080;
-    z-index: 20px;
+    z-index: 30;
 }
 .bottomAmbilight {
-
     max-width: 1024px;
     height: 408px;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 10;
+    position: absolute;
+    bottom: -30px;
 }
 .bottomAmbilightOrange {
     width: 775px;
