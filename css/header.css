@@ -76,6 +76,7 @@
     left: 50%;
     transform: translateX(-50%);
     background: transparent;
+    z-index: 999;
 }
 .rectangleNavbar {
     width: 1024px;

@@ -3,6 +3,8 @@
 :root {
     --blanc : #F0F0F0;
     --noir : #0D0D0D;
+    --gris : #808080;
+    --neomorphDrop : 18px 18px 30px 0px #D1D9E6, -18px -18px 30px 0px #FFF;
 }
 *{
     padding: 0;
@@ -11,4 +13,9 @@
     background-color: var(--blanc);
     color: var(--noir);
     font-family: 'Chillax-Variable';
+}
+body {
+    position: relative;
+    display: flex;
+    align-items: center;
 }

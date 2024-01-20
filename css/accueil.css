@@ -1,3 +1,104 @@
-.test {
-    height: 70vh;
+:root {
+    --blanc : #F0F0F0;
+    --noir : #0D0D0D;
+    --gris : #808080;
+    --neomorphDrop : 18px 18px 30px 0px #D1D9E6, -18px -18px 30px 0px #FFF;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--blanc);
+    color: var(--noir);
+    font-family: 'Chillax-Variable';
+}
+.accueil {
+    width: 100%;
+    max-width: 1024px;
+    height: 80vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background: transparent;
+}
+.textEtImage {
+    display: flex;
+    position: relative;
+    background: transparent;
+    justify-content: space-between;
+}
+.text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+}
+.text h1 {
+    font-size: 53px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: transparent;
+}
+.text h2 {
+    color: var(--gris);
+    text-align: justify;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: transparent;
+    max-width: 550px;
+    padding-top: 17px;
+}
+span {
+    color: var(--gris);
+    background: transparent;
+}
+img {
+    background: transparent;
+}
+.boutons,
+button {
+    display: flex;
+    border: none;
+}
+.boutonNoir {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background: var(--noir);
+    box-shadow: var(--neomorphDrop);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 45px;
+}
+.boutonNoir h1 {
+    color: var(--blanc);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: transparent;
+}
+.boutonBlanc {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background: var(--blanc);
+    box-shadow:var(--neomorphDrop);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+;.boutonBlanc h1 {
+    color: var(--noir);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: transparent;
+    padding-right: 3px;
 }
