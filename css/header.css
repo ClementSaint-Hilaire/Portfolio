@@ -130,7 +130,7 @@
     color : var(--noir);
     margin: -4px;
     background: transparent;
-
+    padding-right: 10px;
 }
 .textNavbar h2 {
     font-size: 15px;
@@ -139,6 +139,11 @@
     line-height: normal;
     color : var(--noir);
     background: transparent;
+}
+.textNavbar a {
+    text-decoration: none;
+    background: none;
+    display: contents;
 }
 
 /*---------------RESPONSIVE---------------*/
