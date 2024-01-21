@@ -130,13 +130,25 @@ img {
     flex-direction: column;
     justify-content: center;
     max-width: 200px;
-    min-height: 200px;
-    height: fit-content;
+    height: 200px;
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.25);
     background: rgba(255, 255, 255, 0.25);
     padding: 0 13px;
     margin: 20px 28px;
+    transition: height smooth 2s;
+}
+.cardApp:hover {
+    height: fit-content;
+}
+.faceTwo {
+    display: none; 
+    transition: display 1s;
+}
+.cardApp:hover .faceTwo {
+    display: flex; 
+    background: transparent;
+    padding: 13px 0px;
 }
 .cardApp img {
     width: 100px;
@@ -165,7 +177,15 @@ img {
     line-height: normal;
     background: transparent;
 }
-
+.faceTwo h3 {
+    max-width: 160px;
+    text-align: left;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; 
+    background: none;
+}
 
 
 
