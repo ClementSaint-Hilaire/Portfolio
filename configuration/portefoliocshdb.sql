@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : dim. 21 jan. 2024 à 11:45
+-- Généré le : dim. 21 jan. 2024 à 21:54
 -- Version du serveur : 8.2.0
 -- Version de PHP : 8.2.13
 
@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS `appcard` (
   `imglink` varchar(255) NOT NULL,
   `description` mediumtext NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=MyISAM AUTO_INCREMENT=34 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=38 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Déchargement des données de la table `appcard`
@@ -66,14 +66,43 @@ INSERT INTO `appcard` (`ID`, `nom`, `categorie`, `imglink`, `description`) VALUE
 (23, 'GLPI', 'supervision', '../images/Apps/GLPI.svg', 'GLPI 2.0 est une solution de gestion des services informatiques, des actifs et des tickets. C\'est une application web qui permet aux organisations de gérer efficacement leur parc informatique, leurs ressources matérielles, leurs logiciels et leurs services.'),
 (24, 'Gitlab', 'code', '../images/Apps/Gitlab.svg', 'GitLab est une plateforme de gestion de projet basée sur Git qui offre des fonctionnalités de gestion de code source, de suivi des problèmes, de déploiement continu et de collaboration pour les équipes de développement. Elle permet aux développeurs de travailler ensemble de manière transparente, de gérer le cycle de vie du code source, et de suivre l\'avancement des projets. '),
 (25, 'Github', 'code', '../images/Apps/Github.svg', 'GitHub est une plateforme de développement de logiciels basée sur le cloud, utilisé pour la gestion de versions, la collaboration et le suivi des projets de développement de logiciels.'),
-(26, 'Exel', 'calcul', '../images/Apps/Exel.svg', ''),
-(27, 'Cyberwatch', 'supervision', '../images/Apps/Cyberwatch.svg', ''),
-(28, 'Canva', 'design', '../images/Apps/Canva.svg', ''),
-(29, 'Anydesk', 'supervision', '../images/Apps/Anydesk.svg', ''),
-(30, 'Ilustrator', 'design', '../images/Apps/AdobeIlustrator.svg', ''),
-(31, 'Acrobat', 'design', '../images/Apps/AdobeAcrobat.svg', ''),
-(32, '3cx', 'social', '../images/Apps/3cx.svg', ''),
-(33, 'Keynote', 'presentation', '../images/Apps/Keynote.svg', 'Keynote est une application de présentation développée par Apple. Elle offre des fonctionnalités avancées pour créer des diaporamas interactifs, des présentations visuelles et des animations.');
+(26, 'Exel', 'calcul', '../images/Apps/Exel.svg', 'Excel est un logiciel de tableur développé par Microsoft. Il offre des fonctionnalités puissantes pour la création, la gestion et l\'analyse de feuilles de calcul. '),
+(27, 'Cyberwatch', 'supervision', '../images/Apps/Cyberwatch.svg', 'Cyberwatch est une plateforme de gestion de vulnérabilités pour surveiller et gérer les risques de sécurité informatique. Elle détecte les vulnérabilités, priorise les correctifs et génère des rapports détaillés. Idéal pour renforcer la sécurité des systèmes informatiques.'),
+(28, 'Canva', 'design', '../images/Apps/Canva.svg', 'Canva est une plateforme de conception graphique qui permet de créer une grande variété de supports visuels tels que des graphiques, des présentations, des affiches, des logos, des images pour les réseaux sociaux, des cartes, des brochures et bien plus encore.'),
+(29, 'Anydesk', 'supervision', '../images/Apps/Anydesk.svg', 'AnyDesk est une application de bureau à distance qui permet aux utilisateurs d\'accéder à un ordinateur à distance à partir d\'un autre appareil.'),
+(30, 'Ilustrator', 'design', '../images/Apps/AdobeIlustrator.svg', 'Adobe Illustrator est un logiciel de création graphique vectorielle développé par Adobe. Illustrator permet de créer des illustrations, des logos, des icônes et d\'autres éléments graphiques en utilisant des vecteurs, ce qui garantit une qualité d\'image élevée et une extensibilité sans perte de résolution.'),
+(31, 'Acrobat', 'design', '../images/Apps/AdobeAcrobat.svg', 'Adobe Acrobat est un logiciel développé par Adobe qui permet de créer, visualiser, modifier et partager des fichiers au format PDF'),
+(32, '3cx', 'social', '../images/Apps/3cx.svg', '3CX est une solution de communication basée sur la VoIP. Elle permet aux entreprises de gérer leurs communications internes et externes de manière efficace, en utilisant des fonctionnalités telles que la téléphonie, la visioconférence, la messagerie instantanée et plus encore. '),
+(33, 'Keynote', 'presentation', '../images/Apps/Keynote.svg', 'Keynote est une application de présentation développée par Apple. Elle offre des fonctionnalités avancées pour créer des diaporamas interactifs, des présentations visuelles et des animations.'),
+(34, 'OBS', 'video', '../images/Apps/OBS.svg', 'OBS, ou Open Broadcaster Software, est un logiciel open-source utilisé pour la capture vidéo et la diffusion en direct. Il offre des fonctionnalités robustes pour l\'enregistrement de l\'écran, la capture d\'application, la diffusion en continu sur des plateformes telles que Twitch et YouTube, ainsi que la gestion de sources audio et vidéo.'),
+(35, 'VMware', 'virtualisation', '../images/Apps/VMware.svg', 'VMware est une société spécialisée dans les technologies de virtualisation et de cloud computing. Elle propose une suite de produits qui permettent aux entreprises de créer, gérer et optimiser des environnements informatiques virtualisés. '),
+(36, 'Discord', 'social', '../images/Apps/Discord.svg', 'Discord est une plateforme de communication en ligne, principalement utilisée pour la messagerie instantanée, la voix et la vidéo. '),
+(37, 'X', 'social', '../images/Apps/X.svg', 'X, anciennement Twitter, est une plateforme de médias sociaux où les utilisateurs peuvent partager des messages courts, images, et vidéo. ');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `xpcard`
+--
+
+DROP TABLE IF EXISTS `xpcard`;
+CREATE TABLE IF NOT EXISTS `xpcard` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `linkimg` varchar(60) NOT NULL,
+  `categorie` varchar(60) NOT NULL,
+  `titre` varchar(255) NOT NULL,
+  `liensite` varchar(60) NOT NULL,
+  `date` varchar(60) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Déchargement des données de la table `xpcard`
+--
+
+INSERT INTO `xpcard` (`id`, `linkimg`, `categorie`, `titre`, `liensite`, `date`) VALUES
+(1, '../images/Xp/indeauville.svg', 'Relation client', 'Conseillé en séjour en office de tourisme pour « InDeauville ».', 'https://www.indeauville.fr', 'étés  2023-2024'),
+(4, '../images/Xp/tradart.svg', 'Vente & estimation', 'Stagiaire dans la SARL « TRADART » auprès du commissaire priseur James Fattori.\r\n', '', 'Juin 2017');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
