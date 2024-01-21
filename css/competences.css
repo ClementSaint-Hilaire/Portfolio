@@ -47,6 +47,7 @@ span {
 }
 .titreEtGraphique h2 {
     font-size: var(--soustitre);
+    color: var(--gris);
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
