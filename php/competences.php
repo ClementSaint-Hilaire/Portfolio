@@ -66,18 +66,21 @@
             $query->bindColumn('nom', $nom);
             $query->bindColumn('categorie', $categorie);
             $query->bindColumn('imglink', $imglink);
+            $query->bindColumn('description', $description);
             
             echo '<div class="biblioApps">';
 
                 while ($query->fetch(PDO::FETCH_BOUND)) {
                         echo '<div class="cardApp">';
-                            echo '<img src="' . htmlspecialchars($imglink) . '" alt="">';
-                            echo '<div class="cardText">';
-                                echo '<h1>' . htmlspecialchars($nom) . '</h1>';
-                                echo '<h2>' . htmlspecialchars($categorie) . '</h2>';
+                                    echo '<img src="' . htmlspecialchars($imglink) . '" alt="">';
+                                    echo '<div class="cardText">';
+                                        echo '<h1>' . htmlspecialchars($nom) . '</h1>';
+                                        echo '<h2>' . htmlspecialchars($categorie) . '</h2>';
+                                    echo '</div>';
+                            echo '<div class="faceTwo">';
+                                echo '<h3>' .htmlspecialchars($description) . '</h3>';
                             echo '</div>';
                         echo '</div>';
-                
                 }
                 
             echo '</div>';
