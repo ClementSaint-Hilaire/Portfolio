@@ -1,0 +1,148 @@
+@import url('chillax.css');
+
+:root {
+    --blanc : #F0F0F0;
+    --noir : #0D0D0D;
+    --gris : #808080;
+    --neomorphDrop : 18px 18px 30px 0px #D1D9E6, -18px -18px 30px 0px #FFF;
+    --titre : 53px;
+    --soustitre : 15px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--blanc);
+    color: var(--noir);
+    font-family: 'Chillax-Variable';
+}
+
+.experiences {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1200px;
+    min-height: 1000px;
+    background: transparent;
+}
+
+.titre {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background: transparent;
+    margin: 0 0 100px 0;
+    padding: 0 88px;    
+}
+.titre h1 {
+    font-size: var(--titre);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: transparent;
+}
+span {
+    color: var(--gris);
+    background: transparent;
+}
+.titre h2 {
+    color: var(--gris);
+    font-size: var(--soustitre);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: transparent;
+}
+
+.experiencesProCard {
+    position: relative;
+    display: flex;
+    height: fit-content;
+    margin: 0 auto 100px auto;
+}
+.xpCard {
+    width: 1200px;
+    height: 900px;
+    position: relative;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
+    border-radius: 46px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    text-align: center;
+    z-index: 10;
+}
+.content h1 {
+    color: var(--blanc);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: transparent;
+    position: relative;
+    z-index: 10;
+}
+.content h2 {
+    position: relative;
+    width: 650px;
+    color: var(--blanc);
+    text-align: center;
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: transparent;
+    z-index: 10;
+}
+.cardFooter {
+    position: relative;
+    display: flex;
+    width: 1100px;
+    justify-content: space-between;
+    bottom: -360px;
+    background: transparent;
+}
+.liensToSite {
+    position: relative;
+    display: flex;
+    background: transparent;
+    align-items: center;
+    width: 90px;
+    justify-content: space-between;
+}
+svg {
+    background: transparent;
+}
+.liensToSite h1 {
+    background: transparent;
+}
+.liensToSite h1 a {
+    text-decoration: none;
+    color: var(--gris);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: transparent;
+}
+.cardFooter h2 {
+    color: var(--blanc);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: fit-content;
+    background: transparent;
+}
