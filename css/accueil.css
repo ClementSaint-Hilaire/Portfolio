@@ -79,6 +79,10 @@ button {
     justify-content: center;
     margin-right: 45px;
 }
+.boutonNoir:hover {
+    transform:scale(0.9);
+    cursor: pointer;
+}
 .boutonNoir h1 {
     color: var(--blanc);
     font-size: 15px;
@@ -96,6 +100,10 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.boutonBlanc:hover {
+    transform:scale(1.1);
+    cursor: pointer;
 }
 ;.boutonBlanc h1 {
     color: var(--noir);

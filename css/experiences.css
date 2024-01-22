@@ -25,8 +25,8 @@
     max-width: 1200px;
     min-height: 1000px;
     background: transparent;
+    overflow: hidden;
 }
-
 .titre {
     position: relative;
     display: flex;
@@ -61,6 +61,14 @@ span {
     display: flex;
     height: fit-content;
     margin: 0 auto 100px auto;
+    overflow: hidden;
+}
+.carousel {
+    width: 1200px;
+    height: 900px;
+    border: solid 3px red;
+    position: relative;
+    display: inline-block;
 }
 .xpCard {
     width: 1200px;
@@ -73,6 +81,27 @@ span {
     align-items: center;
     justify-content: center;
     z-index: 1;
+}
+.boutons {
+    display: flex;
+    align-items: center;
+    width: 1024px;
+    justify-content: end;
+    margin: 0 0px 50px 0px;
+    background: transparent;
+}
+.bouton {
+    position: relative;
+    background: transparent;
+    width: 45px;
+    height: 45px;
+    margin: 0 0 0 25px;
+    cursor: pointer;
+    transition: all 1s (ease);
+}
+.bouton:hover {
+    transform: scale(1.1);
+    transition: all 1s (ease);
 }
 .content {
     position: relative;
