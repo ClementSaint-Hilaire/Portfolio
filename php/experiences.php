@@ -27,7 +27,7 @@
                     die('Erreur de connexion à la bdd : ' . $e->getMessage());
                 }
 
-                $query = $db->prepare("SELECT * FROM xpcard");
+                $query = $db->prepare("SELECT * FROM xpcard ORDER BY id ASC");
 
                 if ($query->execute()) {
                     $query->bindColumn('id',$id);
