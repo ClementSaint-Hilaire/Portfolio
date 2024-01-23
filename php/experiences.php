@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="../css/experiences.css">  
     <title>csh</title>
 </head>
@@ -36,10 +37,10 @@
                     $query->bindColumn('liensite', $liensite);
                     $query->bindColumn('date', $date);
                 
-                    echo '<div class="carousel>';
+                    echo '<div class="carousel">';
                             while ($query->fetch(PDO::FETCH_BOUND)) {
                                     echo '<div class="xpCard" id="' . ($id). '" style=" background-image: url(' . htmlspecialchars($linkimg) . ')">';
-                                        echo '<div class="content">';
+                                        echo '<div class="contenu">';
                                             echo '<h1>' . htmlspecialchars($categorie) . '</h1>';
                                             echo '<h2>' . htmlspecialchars($titre) . '</h2>';
                                             echo '<div class="cardFooter">';
@@ -55,10 +56,6 @@
                                     echo '</div>';
                             }
                     echo '</div>';
-                    echo '<div class="boutons">';
-                        echo '<img src="../images/buttonL.svg" class="bouton" id="L">';
-                        echo '<img src="../images/buttonR.svg" class="bouton" id="R">';
-                    echo '</div>';
 
                     echo '<script>var nbr = ' . $query->rowCount() . ';</script>';
 
@@ -68,14 +65,20 @@
 
                 $db = null;
             ?>  
+
+
         </div>
-
+        <div class="boutons">';
+                <img src="../images/buttonL.svg" class="boutonL">
+                <img src="../images/buttonR.svg" class="boutonR">
+            </div>
     </section>
-
 
     <?php include 'composants/footer.html'; ?>
 
-    <script>
-    </script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../script/carousel.js"></script>
 </body>
 </html>
