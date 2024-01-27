@@ -1,0 +1,227 @@
+@import url('chillax.css');
+
+:root {
+    --blanc : #F0F0F0;
+    --noir : #0D0D0D;
+    --gris : #808080;
+    --neomorphDrop : 18px 18px 30px 0px #D1D9E6, -18px -18px 30px 0px #FFF;
+    --titre : 53px;
+    --soustitre : 15px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--blanc);
+    color: var(--noir);
+    font-family: 'Chillax-Variable';
+}
+
+.titreEtSousTitre {
+    position: relative;
+    display: flex;
+    margin: 0 auto 100px auto;
+    max-width: 1024px;
+    background: transparent;
+}
+.containerTitreEtSousTitre {
+    text-align: right;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+}
+.containerTitreEtSousTitre h1 {
+    display: flex;
+    gap: 3px 10px;
+    font-size: var(--titre);
+    font-weight: 700;
+    background: transparent;
+}
+span {
+    color: var(--gris);
+    background: transparent;
+}
+.containerTitreEtSousTitre h2 {
+    color: var(--gris);
+    font-size: var(--soustitre);
+    font-weight: 400;
+    background: transparent;
+
+}
+.projet {
+    width: 100%;
+    height: 105vh;  
+}
+
+/************quantum computer************/
+
+.quantumContainer {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    height: 105vh;
+}
+.containerImageEtTexte {
+    position: relative;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: transparent;
+}
+.containerImageEtTexte img {
+    position: relative;
+    height: 95vh;
+    margin: 0;
+}
+.footerLientoProjet {
+    height: 40px;
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-evenly;
+    background: transparent;
+}
+.footerLientoProjet h1 {
+    color: var(--blanc);
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    background: transparent;
+    padding-right: 20px;
+}
+.footerLientoProjet a {
+    background: transparent;
+    width: 40px;
+    height: 40px;
+}
+.footerLientoProjet a img {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    background: transparent;
+}
+.footerLientoProjet a:hover {
+    transform: scale(1.1);
+}
+.containerText {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+.elementsTextContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+.elementsTextContainer h1 {
+    position: relative;
+    color: var(--blanc);
+    font-size: 25px;
+    font-weight: 400;
+    margin: -10px auto;
+    background: transparent;
+}
+.elementsTextContainer h2 {
+    position: relative;
+    color: var(--blanc);
+    font-size: 69px;
+    font-weight: 600;
+    background: transparent;
+}
+.elementsTextContainer h3 {
+    color: var(--gris);
+    font-size: 13px;
+    font-weight: 400;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+}
+
+/************quantum computer************/
+
+.visonOsProjet {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    height: 105vh;
+    max-width: 1024px;
+}
+.visonOsProjetFooter {
+    height: 40px;
+    position: relative;
+    display: flex;
+    margin: 0 auto 200px auto;
+    align-items: center;
+    justify-content: space-evenly;
+    background: transparent;
+}
+.visonOsProjetFooter h1 {
+    color: var(--noit);
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    background: transparent;
+    padding-right: 20px;
+}
+.visonOsProjetFooter a {
+    background: transparent;
+    width: 40px;
+    height: 40px;
+}
+.visonOsProjetFooter a img {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    background: transparent;
+}
+.visonOsProjetFooter a:hover {
+    transform: scale(1.1);
+}
+.visonOsProjetContent {
+    position: relative;
+    display: flex;
+    margin: auto auto 200px auto;
+    align-items: center;
+    justify-content: space-evenly;
+    background: transparent;
+}
+.visonOsProjetContentText {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+}
+.visonOsProjetContentText h2 {
+    text-align: justify;
+    font-size: 25px;
+    font-weight: 400;
+}
+.visonOsProjetContentTextHead {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 580px;
+}
+.visonOsProjetContentTextHead h1 {
+    font-size: 95px;
+    font-weight: 600px;
+}
+.visonOsProjetContent img {
+    position: relative;
+    margin: 0 auto;
+}
