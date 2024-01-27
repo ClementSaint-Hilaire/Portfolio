@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : dim. 21 jan. 2024 à 21:54
+-- Généré le : sam. 27 jan. 2024 à 21:21
 -- Version du serveur : 8.2.0
 -- Version de PHP : 8.2.13
 
@@ -82,6 +82,33 @@ INSERT INTO `appcard` (`ID`, `nom`, `categorie`, `imglink`, `description`) VALUE
 -- --------------------------------------------------------
 
 --
+-- Structure de la table `ecoles`
+--
+
+DROP TABLE IF EXISTS `ecoles`;
+CREATE TABLE IF NOT EXISTS `ecoles` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `imglink` varchar(60) NOT NULL,
+  `titre` varchar(120) NOT NULL,
+  `ecolelink` varchar(250) NOT NULL,
+  `ecolenom` varchar(60) NOT NULL,
+  `ville` varchar(60) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Déchargement des données de la table `ecoles`
+--
+
+INSERT INTO `ecoles` (`id`, `imglink`, `titre`, `ecolelink`, `ecolenom`, `ville`) VALUES
+(1, '../images/Xp/sainte-ursule.png', 'Alternant en BTS Service Informatique aux Organisations, spécialité Solutions Logicielles et Applications Métiers ', 'https://www.caensup.fr', 'CaenSup Sainte-Ursule', 'Caen'),
+(2, '../images/Xp/caen-campus-1.png', 'Etudiant en licence de droit à la l’Université de Caen Normandie.', 'https://ufr-droit.unicaen.fr', 'Faculté de Caen', 'Caen'),
+(3, '../images/Xp/fremont.png', 'Lycéen en classe Littéraire au Lycée Frémont.', 'https://lyceesfremontlesrosiers.fr', 'Frémont - Les Rosiers', 'Liseux'),
+(4, '../images/Xp/gambier.png', 'Collégien en Classe à Horaires Aménagées Musique en collaboration avec le Conservatoire à Rayonnement Départemental de L', 'https://marcel-gambier.lycee.ac-normandie.fr', 'Marcel-Gambier', 'Lisieux');
+
+-- --------------------------------------------------------
+
+--
 -- Structure de la table `xpcard`
 --
 
@@ -94,15 +121,17 @@ CREATE TABLE IF NOT EXISTS `xpcard` (
   `liensite` varchar(60) NOT NULL,
   `date` varchar(60) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=51 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Déchargement des données de la table `xpcard`
 --
 
 INSERT INTO `xpcard` (`id`, `linkimg`, `categorie`, `titre`, `liensite`, `date`) VALUES
-(1, '../images/Xp/indeauville.svg', 'Relation client', 'Conseillé en séjour en office de tourisme pour « InDeauville ».', 'https://www.indeauville.fr', 'étés  2023-2024'),
-(4, '../images/Xp/tradart.svg', 'Vente & estimation', 'Stagiaire dans la SARL « TRADART » auprès du commissaire priseur James Fattori.\r\n', '', 'Juin 2017');
+(2, '../images/Xp/indeauville.svg', 'Relation client', 'Conseillé en séjour en office de tourisme pour « InDeauville ».', 'https://www.indeauville.fr', 'étés  2023-2024'),
+(3, '../images/Xp/tradart.svg', 'Vente & estimation', 'Stagiaire dans la SARL « TRADART » auprès du commissaire priseur James Fattori.\r\n', 'https://www.indeauville.fr/boutiques/tradart-deauville', 'Juin 2017'),
+(4, '../images/Xp/avocat.svg', 'Assitance, secrétariat', 'Stagiaire au cabinet d’avocat SELARL Jean-Pimor, auprès d’avocats mandataires au tribunal de commerce.', 'https://www.jean-pimor-avocats.fr', 'Octobre  2022'),
+(1, '../images/Xp/ccccf.svg', 'Développement, réseaux, support', 'Dev junior et apprentis technicien d’exploitation pour la communauté de commune « Coeur Côte Fleurie ».', 'https://www.coeurcotefleurie.org', 'années 2023-2024');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

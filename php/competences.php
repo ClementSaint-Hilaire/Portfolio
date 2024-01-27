@@ -13,7 +13,7 @@
     <section class="competences">
         <div class="titreEtGraphique">
             <h1><span>Mes</span> compétences</h1>
-            <h2>LANGUES, LANGUAGES, LOGICIELS.</h2>
+            <h2>LANGUAGES, LOGICIELS.</h2>
             <div class="graphique">
                 <div class="fondGraphique">
                     <div class="statistiquesEtTitre">

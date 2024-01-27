@@ -25,7 +25,7 @@
                 <div class="containerText">
                     <div class="elementsTextContainer">
                         <h1>reSearch on </h1>
-                        <h2>Quantum Computer</h2>
+                        <h2>Quantum Computers</h2>
                         <h3>made by csh</h3>
                     </div>
                 </div>
@@ -55,7 +55,7 @@
                         </svg>
                         <h1>Vision OS</h1>
                       </div>
-                      <h2>À la suite de la sortie de l’Apple Vision pro, il m’a paru clair que la réalité mixte fera un jour parti de nos vies. Dans cette fin, je cherche par ce projet à m’entraîner sur le fonctionnement d'esthétique spatial.</h2>
+                      <h2>À la suite de la sortie de l’Apple Vision pro, il m’a paru clair que la réalité mixte ferait un jour parti de nos vies. Dans cette optique, je cherche par ce projet à m’entraîner sur le fonctionnement de l'esthétique spatial.</h2>
                 </div>
                 <img src="../images/Projets/VisionPro.svg" alt="Apple Vision Pro">
             </div>
