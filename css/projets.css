@@ -92,6 +92,7 @@ span {
     font-weight: 400;
     text-align: center;
     background: transparent;
+    padding-right: 20px;
 }
 .footerLientoProjet a {
     background: transparent;
@@ -145,4 +146,82 @@ span {
     right: 0;
     bottom: 0;
     background: transparent;
+}
+
+/************quantum computer************/
+
+.visonOsProjet {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    height: 105vh;
+    max-width: 1024px;
+}
+.visonOsProjetFooter {
+    height: 40px;
+    position: relative;
+    display: flex;
+    margin: 0 auto 200px auto;
+    align-items: center;
+    justify-content: space-evenly;
+    background: transparent;
+}
+.visonOsProjetFooter h1 {
+    color: var(--noit);
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    background: transparent;
+    padding-right: 20px;
+}
+.visonOsProjetFooter a {
+    background: transparent;
+    width: 40px;
+    height: 40px;
+}
+.visonOsProjetFooter a img {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    background: transparent;
+}
+.visonOsProjetFooter a:hover {
+    transform: scale(1.1);
+}
+.visonOsProjetContent {
+    position: relative;
+    display: flex;
+    margin: auto auto 200px auto;
+    align-items: center;
+    justify-content: space-evenly;
+    background: transparent;
+}
+.visonOsProjetContentText {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+}
+.visonOsProjetContentText h2 {
+    text-align: justify;
+    font-size: 25px;
+    font-weight: 400;
+}
+.visonOsProjetContentTextHead {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 580px;
+}
+.visonOsProjetContentTextHead h1 {
+    font-size: 95px;
+    font-weight: 600px;
+}
+.visonOsProjetContent img {
+    position: relative;
+    margin: 0 auto;
 }
