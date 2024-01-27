@@ -66,6 +66,30 @@
         </div>
     </section>
 
+    <section class="projet">
+
+        <div class="crisetool">
+            <div class="ambilightOne"></div>
+            <div class="crisetoolContent">
+                <img src="../images/Projets/feu tricolor rouge.svg  ">
+                <div class="crisetoolContentTextContainer">
+                    <div class="crisetoolContentTextHead">
+                        <h1>Introducing</h1>
+                        <h2>CriseTool</h2>
+                        <h3>made by csh</h3>
+                    </div>
+                    <h2>Projet réalisé pour la Communauté de Communes Coeur Côte Fleurie dans le cadre du développement d'un outil interne de gestion de crise.</h2>
+                </div>
+            </div>
+            <div class="crisetoolFooter">
+                 <h1>Ouvrir le détail sur Figma (soon)</h1>
+                 <a href="#"><img src="../images/Projets/bouton.svg" alt=""></a>
+            </div>
+            <div class="ambilightTwo"></div>
+        </div>
+
+    </section>
+
 
     <?php include 'composants/footer.html'; ?>
 
