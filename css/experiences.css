@@ -174,6 +174,10 @@ svg {
     line-height: normal;
     background: transparent;
 }
+.liensToSite h1 a:hover {
+    text-decoration: underline;
+
+}
 .cardFooter h2 {
     color: var(--blanc);
     font-size: 12px;
@@ -187,4 +191,143 @@ svg {
 /**********partie 2**********/
 
 
+.ecolesExperiences {
+    display: grid;
+    place-items: center;
+    margin-inline: 0.1rem;
+    padding-block: 5rem;
+}
+.cardContainer {
+    display: grid;
+    row-gap: 3.5rem;
+}
+.cardArticle {
+    position: relative;
+    overflow: hidden;
+}
+.cardArticle img{
+    width: 100%;
+}
+.cardData {
+    width: 500px;
+    background-color: #FFF;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+    border-radius: 1.5rem;
+    position : absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: -9rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    opacity: 0;
+    transition: opacity 1.5s 1.5s;
+}
+.cardData h1 {
+    color: var(--noir);
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    margin: .25rem 0;
+    background: transparent;
+}
+.cardDataFooter {
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 0 0;
+}
+.cardDataFooter a {
+    color: var(--gris);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    background: transparent;
+}
+.cardDataFooter a:hover {
+    text-decoration: underline;
+}
+.cardDataFooter h2 {
+    color: var(--gris);
+    font-size: 15px;
+    font-weight: 700;
+    background: transparent;
+}
+.cardArticle:hover .cardData {
+    animation: show-data 1s forwards;
+    opacity: 1;
+    transition: opacity .3s;
+} 
+.cardArticle:hover {
+    animation: remove-overflow 2s forwards;
+}
+.cardArticle:not(:hover) {
+    animation: show-overflow 2s forwards;
+}
+.cardArticle:not(:hover) .cardData {
+    animation: remove-data 2s forwards;
+}
 
+
+@keyframes show-data  {
+    50% {
+        transform: translateY(-10rem)
+    }
+    100% {
+        transform: translateY(-7rem);
+    }
+}
+@keyframes remove-overflow {
+    to {
+        overflow: initial;
+    }
+}
+@keyframes remove-data {
+    0% {
+        transform: translateY(-7rem);
+    }
+    50% {
+        transform: translateY(-10rem);
+    }
+    100% {
+        transform: translateY(.5rem);
+    }
+}
+@keyframes show-overflow {
+    0% {
+        overflow: initial;
+        pointer-events: none; 
+    }
+    50% {
+        overflow: hidden;
+    }
+}
+
+
+/**********responsive**********/
+
+@media screen and (max-width: 340px){
+    .ecolesExperiences {
+        margin-inline: 1rem;
+    }
+    .cardData {
+        width: 250px;
+        padding: 1rem;
+    }
+}
+/*
+@media screen and (min-width: 768px) {
+    .cardContainer {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1.5rem;
+    }
+}
+@media screnn and (min-width: 1120px) {
+    .ecolesExperiences {
+        height: 100vh;
+    }
+    .cardContainer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

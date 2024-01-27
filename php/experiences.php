@@ -76,7 +76,22 @@
 
 
     
-
+    <section class="ecolesExperiences">
+        <div class="cardContainer">
+            <article class="cardArticle">
+                <img src="../images/Xp/sainte-ursule.png" alt="Sainte-Ursule" class="cardImage">
+               
+                <div class="cardData">
+                    <h1>Alternant en BTS Service Informatique aux Organisations.</h1>
+                    <div class="cardDataFooter">
+                        <a href="#">site de l'école</a>
+                        <h2>Caen</h2>
+                    </div>
+                    
+                </div>
+            </article>
+        </div>
+    </section>
 
 
 
