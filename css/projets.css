@@ -168,7 +168,7 @@ span {
     background: transparent;
 }
 .visonOsProjetFooter h1 {
-    color: var(--noit);
+    color: var(--noir);
     font-size: 25px;
     font-weight: 400;
     text-align: center;
@@ -224,4 +224,127 @@ span {
 .visonOsProjetContent img {
     position: relative;
     margin: 0 auto;
+}
+
+/************crisetool************/
+
+.crisetool {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 105vh;
+    width: 100%;
+    background-color: #000;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.crisetoolFooter {
+    height: 40px;
+    position: relative;
+    display: flex;
+    margin: 0 auto 200px auto;
+    align-items: center;
+    justify-content: space-evenly;
+    background: transparent;
+}
+.crisetoolFooter h1 {
+    color: var(--blanc);
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    background: transparent;
+    padding-right: 20px;
+}
+.crisetoolFooter a {
+    background: transparent;
+    width: 40px;
+    height: 40px;
+}
+.crisetoolFooter a img {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    background: transparent;
+}
+.crisetoolFooter a:hover {
+    transform: scale(1.1);
+}
+.ambilightOne {
+    width: 800px;
+    height: 800px;
+    border-radius: 576px;
+    background: rgba(240, 12, 76, 0.43);
+    filter: blur(120px);
+    position: absolute;
+    top: -200px;
+    left: -200px;
+}
+.ambilightTwo {
+    width: 800px;
+    height: 800px;
+    border-radius: 576px;
+    background: rgba(240, 12, 76, 0.43);
+    filter: blur(120px);
+    position: absolute;
+    bottom: -200px;
+    right: -200px;
+}
+.crisetoolContent {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    margin: auto;
+    max-width: 1024px;
+}
+.crisetoolContent img {
+    position: relative;
+    background: transparent;
+}
+.crisetoolContentTextContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+}
+.crisetoolContentTextContainer h2{
+    color: var(--blanc);
+    text-align: justify;
+    font-size: 25px;
+    font-weight: 500;
+    background: transparent;
+}
+.crisetoolContentTextHead {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    margin-bottom: 20px;
+}
+.crisetoolContentTextHead h1 {
+    font-size: 22px;
+    color: var(--blanc);
+    font-weight: 400;
+    background: transparent;
+    margin-bottom: -10px;
+}
+.crisetoolContentTextHead h2 {
+    font-size: 99px;
+    color: var(--blanc);
+    font-weight: 600;
+    background: transparent;
+}
+.crisetoolContentTextHead h3 {
+    font-size: 13px;
+    color: var(--gris);
+    font-weight: 400;
+    background: transparent;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
