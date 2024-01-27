@@ -17,6 +17,7 @@
     font-family: 'Chillax-Variable';
 }
 
+/**********partie 1**********/
 .experiences {
     position: relative;
     display: flex;
@@ -182,3 +183,8 @@ svg {
     width: fit-content;
     background: transparent;
 }
+
+/**********partie 2**********/
+
+
+
