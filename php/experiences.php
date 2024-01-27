@@ -76,10 +76,10 @@
 
 
     
-    <section class="ecolesExperiences">
+<!--     <section class="ecolesExperiences">
         <div class="cardContainer">
             <article class="cardArticle">
-                <img src="../images/Xp/sainte-ursule.png" alt="Sainte-Ursule" class="cardImage">
+                <img src="../images/Xp/sainte-ursule.png" class="cardImage">
                
                 <div class="cardData">
                     <h1>Alternant en BTS Service Informatique aux Organisations.</h1>
@@ -92,10 +92,49 @@
             </article>
         </div>
     </section>
+ -->
+
+ <?php
+    try {
+        $db = new PDO('mysql:host=localhost;dbname=portefoliocshdb;charset=utf8;', 'root', '');
+        $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    } catch (PDOException $e) {
+        die('Erreur de connexion à la bdd : ' . $e->getMessage());
+    }
+    
+    $query2 = $db->prepare("SELECT * FROM ecoles ORDER BY id ASC");
+
+        if ($query2->execute()) {
+                $query2->bindColumn('id',$id);
+                $query2->bindColumn('imglink', $imglink);
+                $query2->bindColumn('titre', $titre);
+                $query2->bindColumn('ecolelink', $ecolelink);
+                $query2->bindColumn('ecolenom', $ecolenom);
+                $query2->bindColumn('ville', $ville);
+        } else {
+        echo "Erreur lors de l'exécution de la requête : " . $query2->errorInfo()[2];
+        }
+        
+        echo '<section class="ecolesExperiences">';
+            while ($query2->fetch(PDO::FETCH_BOUND)) {
+                echo '<div class="cardContainer">';
+                    echo '<article class="cardArticle">';
+                        echo '<img src="' . htmlspecialchars($imglink) . '" class="cardImage">';
+                        echo '<div class="cardData">';
+                            echo '<h1>' . htmlspecialchars($titre) . '</h1>';
+                            echo '<div class="cardDataFooter">';
+                                echo '<a href="' . htmlspecialchars($ecolelink) . '">' . htmlspecialchars($ecolenom) . '</a>';
+                                echo '<h2>📍 ' . htmlspecialchars($ville) . '</h2>';
+                            echo '</div>';
+                        echo '</div>';
+                    echo '</article>';
+                echo '</div>';
+            }
+        echo '</section>';
 
 
 
-
+    ?>
 
 
 
