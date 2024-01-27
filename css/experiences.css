@@ -204,9 +204,11 @@ svg {
 .cardArticle {
     position: relative;
     overflow: hidden;
+    margin-top: 60px;
 }
 .cardArticle img{
     width: 100%;
+    
 }
 .cardData {
     width: 500px;
