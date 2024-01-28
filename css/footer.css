@@ -160,9 +160,3 @@
 }
 
 
-/*---------------RESPONSIVE---------------*/
-@media screen and (max-width: 768px) {
-     .topAmbilightsRouge {
-        height: auto;
-      }
-   }
