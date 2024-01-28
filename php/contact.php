@@ -18,7 +18,7 @@
     </section>
 
     <section class="contact">
-        <div class="formulaireDeContact">
+        <form action="../configuration/mailer.php" method="post" class="formulaireDeContact">
             <div class="formulaireDeContactHead">
                 <div class="feurouge"></div>
                 <div class="feuorange"></div>
@@ -28,28 +28,29 @@
             <div class="formulaireDeContactInfo">
                 <div class="formulaireDeContactInfoContainer">
                     <div class="formulaireDeContactInfoEmail">
-                        <h1>Email :</h1>
-                        <input type="text" placeholder="Entrez votre adresse mail">
+                        <label for="email"><h1>Email :</h1></label>
+                        <input type="email" name="email" placeholder="Entrez votre adresse mail" required>
                     </div>
                     <span class="ligne"></span>
                     <div class="formulaireDeContactInfoNom">
-                        <h1>Nom :</h1>
-                        <input type="text" placeholder="Entrez votre nom">
+                        <label for="nom"><h1>Nom :</h1></label>
+                        <input type="text" name="nom" placeholder="Entrez votre nom">
                     </div>
                     <span class="ligne"></span>
                     <div class="formulaireDeContactInfoSujet">
-                        <h1>Sujet :</h1>
-                        <input type="text" placeholder="Entrez le sujet de votre mail">
+                        <label for="sujet"><h1>Sujet :</h1></label>
+                        <input type="text" name="sujet" placeholder="Entrez le sujet de votre mail">
                     </div>
                 </div>
             </div>
             <div class="formulaireDeContactMessage">
                 <div class="formulaireDeContactMessageBox">
-                    <textarea placeholder="Entrez votre message..."></textarea>
+                    <label for="message"></label>
+                    <textarea name="message" placeholder="Entrez votre message..." required></textarea>
                 </div>
             </div>
-            <a href="" class="boutonEnvoyer">Envoyer</a>
-        </div>
+            <button class="boutonEnvoyer">Envoyer</button>
+        </form>
         <div class="resauxSociaux">
             <a href="https://www.linkedin.com/in/clément-saint-hilaire-01412a282"><img src="../images/Contact/LinkedIn.svg"></a>
             <a href="https://github.com/ClementSaint-Hilaire"><img src="../images/Contact/Github.svg" alt=""></a>
