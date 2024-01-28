@@ -45,7 +45,7 @@
                                             echo '<h2>' . htmlspecialchars($titre) . '</h2>';
                                             echo '<div class="cardFooter">';
                                                 echo '<div class="liensToSite">';
-                                                    echo '<h1><a href="' . htmlspecialchars($liensite) . '">site internet</a></h1>';
+                                                    echo '<h1><a href="' . htmlspecialchars($liensite) . '" target="_blank">site internet</a></h1>';
                                                     echo '<svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none">
                                                             <path d="M8.5 1C8.5 0.723858 8.27614 0.5 8 0.5L3.5 0.5C3.22386 0.5 3 0.723858 3 1C3 1.27614 3.22386 1.5 3.5 1.5L7.5 1.5L7.5 5.5C7.5 5.77614 7.72386 6 8 6C8.27614 6 8.5 5.77614 8.5 5.5L8.5 1ZM1.35355 8.35355L8.35355 1.35355L7.64645 0.646447L0.646447 7.64645L1.35355 8.35355Z" fill="#808080"/>
                                                           </svg>';
@@ -103,7 +103,7 @@
                         echo '<div class="cardData">';
                             echo '<h1>' . htmlspecialchars($titre) . '</h1>';
                             echo '<div class="cardDataFooter">';
-                                echo '<a href="' . htmlspecialchars($ecolelink) . '">' . htmlspecialchars($ecolenom) . '</a>';
+                                echo '<a href="' . htmlspecialchars($ecolelink) . '" target="_blank">' . htmlspecialchars($ecolenom) . '</a>';
                                 echo '<h2>📍 ' . htmlspecialchars($ville) . '</h2>';
                             echo '</div>';
                         echo '</div>';

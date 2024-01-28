@@ -32,7 +32,7 @@
             </div>
             <div class="footerLientoProjet">
                  <h1>Ouvrir le détail sur Figma (soon)</h1>
-                 <a href="#"><img src="../images/Projets/bouton.svg" alt=""></a>
+                 <a href="#" target="_blank"><img src="../images/Projets/bouton.svg" alt=""></a>
             </div>
         </div>
 
@@ -61,7 +61,7 @@
             </div>
             <div class="visonOsProjetFooter">
                  <h1>Ouvrir le détail sur Figma</h1>
-                 <a href="https://www.figma.com/community/file/1328464238383806605/work-on-vision-os-cshd"><img src="../images/Projets/bouton.svg" alt=""></a>
+                 <a href="https://www.figma.com/community/file/1328464238383806605/work-on-vision-os-cshd" target="_blank"><img src="../images/Projets/bouton.svg"></a>
             </div>
         </div>
     </section>
@@ -83,7 +83,7 @@
             </div>
             <div class="crisetoolFooter">
                  <h1>Ouvrir le détail sur Figma (soon)</h1>
-                 <a href="#"><img src="../images/Projets/bouton.svg" alt=""></a>
+                 <a href="#" target="_blank"><img src="../images/Projets/bouton.svg" alt=""></a>
             </div>
             <div class="ambilightTwo"></div>
         </div>

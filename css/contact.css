@@ -214,7 +214,6 @@ span {
 .formulaireDeContactMessageBox label {
     background: transparent;
 }
-
 .boutonEnvoyer {
     width: 160px;
     height: 60px;
@@ -230,6 +229,12 @@ span {
     justify-content: center;
     align-items: center;
     text-decoration: none   ;
+}
+.boutonEnvoyer:hover {
+    transform: scale(1.1);
+}
+.boutonEnvoyer::after {
+    transform: scale(0.9);
 }
 .resauxSociaux {
     position: relative;
