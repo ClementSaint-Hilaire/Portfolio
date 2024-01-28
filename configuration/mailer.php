@@ -30,7 +30,7 @@ try {
     $mail->Port       = 465;                                     //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->setFrom('from@example.com', 'csh.fr');
+    $mail->setFrom('from@example.com', $nom);
     $mail->addAddress('clement.sainthilaire.pro@gmail.com');     //Add a recipient
 
 
@@ -41,9 +41,9 @@ try {
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
-    header("Location: ../php/accueil.php"); 
+    header("Location: ../php/contactSucces.php"); 
     exit();
 
 } catch (Exception $e) {
-    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    header("Location: ../php/contactFail.php"); 
 }

@@ -57,6 +57,10 @@ span {
     margin: 0 auto;
     background: transparent;
 }
+.contact img{
+    background: transparent;
+    padding: 50px;
+}
 .formulaireDeContact {
     width: 865px;
     height: 792px;
@@ -204,6 +208,13 @@ span {
     font-weight: 400;
     background: transparent;
 }
+.formulaireDeContactInfoEmail label,
+.formulaireDeContactInfoNom label,
+.formulaireDeContactInfoSujet label,
+.formulaireDeContactMessageBox label {
+    background: transparent;
+}
+
 .boutonEnvoyer {
     width: 160px;
     height: 60px;
