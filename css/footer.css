@@ -159,4 +159,23 @@
     width: 500px;
 }
 
+/*---------------RESPONSIVE---------------*/
 
+@media screen and (max-width: 768px) {  
+
+}
+
+@media screen and (max-width: 1024px) {
+    .Footer {
+        height: auto;
+    }
+    .footerContainer {
+        flex-direction: column;
+    }
+    .vide {
+        width: 0;
+    }
+    .listesAnnexe {
+        gap: 90px
+    }
+}
