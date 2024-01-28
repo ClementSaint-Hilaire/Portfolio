@@ -22,7 +22,6 @@
     position: relative;
     display: flex;
     flex-direction: column; 
-    align-items: left;
     justify-content: center;
     margin: 0 auto;
     background: transparent;
@@ -75,9 +74,23 @@ span {
     background: transparent;
     margin-bottom: 25px;
 }
-.text img {
+.texte img {
     margin: 80px 0px 200px 100px;
     width: 406px;
     height: 123px;
     background: transparent;
+}
+
+@media screen and (max-width: 768px) {  
+
+}
+
+@media screen and (max-width: 1024px) {
+    .apropos {
+        padding: 10px;
+    }
+    .texte img {
+        margin: 80px 0 100px 30px;
+        width: 250px;
+    }
 }
