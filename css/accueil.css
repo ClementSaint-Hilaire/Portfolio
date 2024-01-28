@@ -64,7 +64,7 @@ img {
     background: transparent;
 }
 .boutons,
-button {
+.boutons a {
     display: flex;
     border: none;
 }
@@ -96,15 +96,16 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
 }
 .boutonBlanc:hover,
 .boutonNoir:hover {
     transform:scale(1.1);
     cursor: pointer;
 }
-;.boutonBlanc h1 {
+.boutonBlanc h1 {
     color: var(--noir);
-    font-size: 15px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
