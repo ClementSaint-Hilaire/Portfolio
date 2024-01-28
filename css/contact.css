@@ -220,17 +220,13 @@ span {
     align-items: center;
     text-decoration: none   ;
 }
-
-
-
-
-
 .resauxSociaux {
     position: relative;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     gap: 23px;
+    margin: 0 auto 50px auto;
 }
 .resauxSociaux a {
     display: flex;

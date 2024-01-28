@@ -51,11 +51,11 @@
             <a href="" class="boutonEnvoyer">Envoyer</a>
         </div>
         <div class="resauxSociaux">
-            <a href="#"><img src="" alt=""></a>
-            <a href="#"><img src="" alt=""></a>
-            <a href="#"><img src="" alt=""></a>
-            <a href="#"><img src="" alt=""></a>
-            <a href="#"><img src="" alt=""></a>
+            <a href="https://www.linkedin.com/in/clément-saint-hilaire-01412a282"><img src="../images/Contact/LinkedIn.svg"></a>
+            <a href="https://github.com/ClementSaint-Hilaire"><img src="../images/Contact/Github.svg" alt=""></a>
+            <a href="https://twitter.com/clemant_sh"><img src="../images/Contact/X.svg" alt=""></a>
+            <a href="https://www.threads.net/@clement.sainthilaire"><img src="../images/Contact/Thread.svg" alt=""></a>
+            <a href="#"><img src="../images/Contact/Mail.svg" alt=""></a>
         </div>
 
 
