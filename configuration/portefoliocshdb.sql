@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : sam. 27 jan. 2024 à 21:21
+-- Généré le : dim. 28 jan. 2024 à 08:48
 -- Version du serveur : 8.2.0
 -- Version de PHP : 8.2.13
 
@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS `appcard` (
   `imglink` varchar(255) NOT NULL,
   `description` mediumtext NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=MyISAM AUTO_INCREMENT=38 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=40 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Déchargement des données de la table `appcard`
@@ -77,7 +77,9 @@ INSERT INTO `appcard` (`ID`, `nom`, `categorie`, `imglink`, `description`) VALUE
 (34, 'OBS', 'video', '../images/Apps/OBS.svg', 'OBS, ou Open Broadcaster Software, est un logiciel open-source utilisé pour la capture vidéo et la diffusion en direct. Il offre des fonctionnalités robustes pour l\'enregistrement de l\'écran, la capture d\'application, la diffusion en continu sur des plateformes telles que Twitch et YouTube, ainsi que la gestion de sources audio et vidéo.'),
 (35, 'VMware', 'virtualisation', '../images/Apps/VMware.svg', 'VMware est une société spécialisée dans les technologies de virtualisation et de cloud computing. Elle propose une suite de produits qui permettent aux entreprises de créer, gérer et optimiser des environnements informatiques virtualisés. '),
 (36, 'Discord', 'social', '../images/Apps/Discord.svg', 'Discord est une plateforme de communication en ligne, principalement utilisée pour la messagerie instantanée, la voix et la vidéo. '),
-(37, 'X', 'social', '../images/Apps/X.svg', 'X, anciennement Twitter, est une plateforme de médias sociaux où les utilisateurs peuvent partager des messages courts, images, et vidéo. ');
+(37, 'X', 'social', '../images/Apps/X.svg', 'X, anciennement Twitter, est une plateforme de médias sociaux où les utilisateurs peuvent partager des messages courts, images, et vidéo. '),
+(38, 'The Hive', 'sécurité', '../images/Apps/theHive.svg', 'TheHive est une plateforme évolutive de réponse aux incidents de sécurité, étroitement intégrée à MISP (Malware Information Sharing Platform), conçue pour simplifier la vie des SOCs, CSIRTs, CERTs et de tout professionnel de la sécurité de l\'information traitant des incidents de sécurité nécessitant une enquête et une action rapide.'),
+(39, 'Proxmox', 'sécurité', '../images/Apps/proxmox.svg', 'Proxmox Mail Gateway est une solution de passerelle de messagerie conçue pour assurer la sécurité des e-mails. Elle intègre des fonctionnalités avancées telles que la protection antivirus, la détection de spams et de phishing, ainsi que la gestion centralisée des politiques de sécurité.');
 
 -- --------------------------------------------------------
 
