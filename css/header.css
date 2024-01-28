@@ -146,18 +146,49 @@
     background: none;
     display: contents;
 }
+.logo {
+    display: none;
+    color: rgba(240, 240, 240, 0.60);
+    font-size: 40px;
+    font-weight: 700;
+}
 
 /*---------------RESPONSIVE---------------*/
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 768px) {  
+    .topAmbilightsRouge {
+        height: 300px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+    }
+    .topAmbilightsOrange,
+    .topAmbilightsBleu {
+        top: 0px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .Header {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .topAmbilights {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .topAmbilightsRouge {
+        height: 300px;
+        position: absolute;
+    }
     .navLight {
-       position: static;
-       top: auto;
-       left: auto;
-       transform: none;
-       margin: 0 auto;
-       max-width: 100%;
+        display: none;
      }
-     .topAmbilightsRouge {
-        height: auto;
-      }
-   }
+     .logo {
+        display: flex;
+        position: absolute;
+        background: transparent;
+     }
+
+}
+
