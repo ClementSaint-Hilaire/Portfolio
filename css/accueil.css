@@ -112,3 +112,20 @@ img {
     background: transparent;
     padding-right: 3px;
 }
+
+
+@media screen and (max-width: 768px) {  
+
+}
+
+@media screen and (max-width: 1024px) {
+    .accueil {
+        padding: 10px;
+    }
+    .textEtImage {
+        margin: 0 auto 40px auto;
+    }
+    .textEtImage img {
+        display: none;
+    }
+}

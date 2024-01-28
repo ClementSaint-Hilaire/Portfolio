@@ -2,6 +2,7 @@
 :root {
     --blanc : #F0F0F0;
     --noir : #0D0D0D;
+    --gris : #808080;
 }
 *{
     padding: 0;
@@ -152,6 +153,28 @@
     font-size: 40px;
     font-weight: 700;
 }
+.navLightMobile {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    width: 380px;
+    height: 60px;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.25);
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 5px;
+    z-index: 100;
+    backdrop-filter: blur(15px);
+}
+.navLightMobile a {
+    background: transparent;
+    margin: 5px 13px;
+}
+.navLightMobile img {
+    background: transparent;
+}
 
 /*---------------RESPONSIVE---------------*/
 
@@ -189,6 +212,8 @@
         position: absolute;
         background: transparent;
      }
-
+     .navLightMobile {
+        display: flex;
+     }
 }
 

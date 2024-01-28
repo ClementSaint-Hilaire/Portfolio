@@ -167,7 +167,7 @@
 
 @media screen and (max-width: 1024px) {
     .Footer {
-        height: auto;
+        height: 700px;
     }
     .footerContainer {
         flex-direction: column;
