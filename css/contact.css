@@ -1,0 +1,248 @@
+@import url('chillax.css');
+
+:root {
+    --blanc : #F0F0F0;
+    --noir : #0D0D0D;
+    --gris : #808080;
+    --neomorphDrop : 18px 18px 30px 0px #D1D9E6, -18px -18px 30px 0px #FFF;
+    --titre : 53px;
+    --soustitre : 15px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--blanc);
+    color: var(--noir);
+    font-family: 'Chillax-Variable';
+}
+
+.titre {
+    width: 100%;
+    position: relative;
+    background: transparent;
+    margin: 0 auto;
+}
+.titreEtSousTitre {
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1024px;
+    background: transparent;
+}
+span {
+    color: var(--gris);
+    background: transparent;
+}
+.titreEtSousTitre h1 {
+    font-size: var(--titre);
+    font-weight: 700;
+    background: transparent;
+}
+.titreEtSousTitre h2 {
+    color: var(--gris);
+    font-size: var(--soustitre);
+    font-weight: 400;
+    background: transparent;
+}
+
+.contact {
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    background: transparent;
+}
+.contact img{
+    background: transparent;
+    padding: 50px;
+}
+.formulaireDeContact {
+    width: 865px;
+    height: 792px;
+    border-radius: 12px;
+    background: #F6F6F6;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: end;
+    margin: 60px auto;
+    box-shadow: 0px 19px 30px 0px rgba(0, 0, 0, 0.10);
+}
+.formulaireDeContactHead {
+    display: flex;
+    padding: 12px;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    border-radius: 12px 12px 0px 0px;
+    /* border: 1px solid rgba(128, 128, 128, 0.15); */
+    background: #F6F6F6;
+}
+.feurouge {
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    background-color: #F63636;
+    border: 1px solid #D62929;
+    position: absolute;
+    left: 12px;
+    top: 19px;
+}
+.feuorange {
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    background-color: #F6C136;
+    border: 1px solid #CEA435;
+    position: absolute;
+    left: 29px;
+    top: 19px;
+}
+.feuvert {
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    background-color: #68F636;
+    border: 1px solid #53CC28;
+    position: absolute;
+    left: 46px;
+    top: 19px;
+}
+.formulaireDeContactHead h1 {
+    position: relative;
+    font-size: 16px;
+    font-weight: 500;
+    background: transparent;
+    margin: 0 auto;
+}
+.formulaireDeContactInfo {
+    display: flex;
+    padding: 10px 40px;
+    align-items: flex-start;
+    position: relative;
+    border-top: 1px solid rgba(128, 128, 128, 0.30);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.30);
+    background: #F6F6F6;
+    width: 100%;
+    height: fit-content;
+}
+.formulaireDeContactInfoContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+    width: 100%;
+    background: transparent;
+}
+.formulaireDeContactInfoEmail,
+.formulaireDeContactInfoNom,
+.formulaireDeContactInfoSujet {
+    position: relative;
+    display: flex;
+    background: transparent;
+}
+.formulaireDeContactInfoEmail h1,
+.formulaireDeContactInfoNom h1,
+.formulaireDeContactInfoSujet h1 {
+    font-size: 15px;
+    font-weight: 500;
+    background: transparent;
+    padding-right: 30px;
+}
+.formulaireDeContactInfoEmail input,
+.formulaireDeContactInfoNom input,
+.formulaireDeContactInfoSujet input {
+    background: transparent;
+    border: none;
+    width: 60%;
+}
+.formulaireDeContactInfoEmail input:focus,
+.formulaireDeContactInfoNom input:focus,
+.formulaireDeContactInfoSujet input:focus,
+.formulaireDeContactMessageBox textarea:focus {
+    outline: none;
+}
+
+.formulaireDeContactInfoEmail input::placeholder, 
+.formulaireDeContactInfoNom input::placeholder,
+.formulaireDeContactInfoSujet input::placeholder {
+    color: var(--gris);
+    font-size: 15px;
+    font-weight: 400;
+}
+.ligne {
+    width: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.15);
+    background: transparent;
+    margin: 20px 0;
+}
+.formulaireDeContactMessage {
+    position: relative;
+    display: flex;
+    padding: 30px;
+    width: 100%;
+    background: transparent;
+}
+.formulaireDeContactMessageBox {
+    position: relative;
+    background-color: #F3F3F3;
+    padding: 30px;
+    width: 100%;
+    height: 420px;
+    border-radius: 12px;
+}
+.formulaireDeContactMessageBox textarea{
+    background: transparent;
+    border: none;
+    width: 100%;
+    height: 400px;
+    resize: none;
+}
+.formulaireDeContactMessageBox textarea::placeholder{
+    color: var(--gris);
+    font-size: 15px;
+    font-weight: 400;
+    background: transparent;
+}
+.formulaireDeContactInfoEmail label,
+.formulaireDeContactInfoNom label,
+.formulaireDeContactInfoSujet label,
+.formulaireDeContactMessageBox label {
+    background: transparent;
+}
+
+.boutonEnvoyer {
+    width: 160px;
+    height: 60px;
+    position: relative;
+    right: 30px;
+    bottom: 15px;
+    border-radius: 10px;
+    background-color: var(--noir);
+    color: var(--blanc);
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none   ;
+}
+.resauxSociaux {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+    margin: 0 auto 50px auto;
+}
+.resauxSociaux a {
+    display: flex;
+    width: 36px;
+    height: 36px;
+    justify-content: center;
+    align-items: center;
+}
