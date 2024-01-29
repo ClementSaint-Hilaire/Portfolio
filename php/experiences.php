@@ -57,7 +57,7 @@
                             }
                     echo '</div>';
 
-                    echo '<script>var nbr = ' . $query->rowCount() . ';</script>';
+                    echo '<script>var nbr = ' . $query->rowCount() . '</script>';
 
                 } else {
                     echo "Erreur lors de l'exécution de la requête : " . $query->errorInfo()[2];
@@ -68,7 +68,7 @@
 
 
         </div>
-        <div class="boutons">';
+        <div class="boutons">
                 <img src="../images/buttonL.svg" class="boutonL">
                 <img src="../images/buttonR.svg" class="boutonR">
             </div>

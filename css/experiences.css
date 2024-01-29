@@ -307,29 +307,133 @@ svg {
 }
 
 
-/**********responsive**********/
+/*---------------RESPONSIVE---------------*/
 
-@media screen and (max-width: 340px){
+@media screen and (max-width: 550px) {
     .ecolesExperiences {
-        margin-inline: 1rem;
+        width: 100%;
     }
     .cardData {
         width: 250px;
         padding: 1rem;
     }
+    .carousel {
+        width: 300px;
+        height: 500px;
+    }
+    .experiences {
+        padding: 10px;
+    }
+    .titre {
+        padding: 0;
+    }
+    .contenu {
+        margin: 120px auto;
+        padding: 0 15px;
+        align-items: start;
+    } 
+    .contenu h2 {
+        width: auto;
+        font-size: 22px;
+        text-align: left;
+        margin-top: 10px;
+    }
+    .boutons {
+        width: auto;
+        margin: 0 auto; 
+    }
+    .experiencesProCard{ 
+        margin: 0 auto 30px auto;
+    }
+    .ecolesExperiences {
+        height: auto;
+    }
+    .ecolesExperiences {
+        display: flex;
+        flex-direction: column;
+    }
+    .cardContainer {
+        grid-template-columns: none;
+    }
+    .cardData {
+        width: 300px;
+
+    }
+    .cardData h1 {
+        font-size: 13px;
+    }
+
 }
-/*
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 940px) and (min-width: 550px) {
+    .carousel {
+        width: 500px;
+        height: 400px;
+    }
+    .experiences {
+        padding: 10px;
+    }
     .cardContainer {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 1.5rem;
     }
+    .contenu {
+        margin: 120px auto;
+        padding: 25px;
+    } 
+    .contenu h2 {
+        width: auto;
+        font-size: 25px;
+    }
+    .boutons {
+        width: auto;
+        margin: 0 auto;
+    }
+    .experiencesProCard{ 
+        margin: 0 auto 30px auto;
+    }
+    .ecolesExperiences {
+        height: auto;
+    }
+    .ecolesExperiences {
+        display: flex;
+        flex-direction: column;
+    }
+    .cardContainer {
+        grid-template-columns: none;
+    }
+    .cardData {
+        width: 400px;
+
+    }
+    .cardData h1 {
+        font-size: 14px;
+    }
 }
-@media screnn and (min-width: 1120px) {
+@media screen and (max-width: 1220px) and (min-width: 940px){
+    .carousel {
+        width: 900px;
+    }
     .ecolesExperiences {
         height: 100vh;
     }
     .cardContainer {
         grid-template-columns: repeat(3, 1fr);
+    }
+    .boutons {
+        width: auto;
+        margin: 0 auto;
+    }
+    .experiencesProCard{ 
+        margin: 0 auto 30px auto;
+    }
+    .ecolesExperiences {
+        height: auto;
+    }
+    .ecolesExperiences {
+        display: flex;
+        flex-direction: column;
+    }
+    .cardContainer {
+        grid-template-columns: none;
     }
 }
