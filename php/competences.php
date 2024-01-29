@@ -18,7 +18,8 @@
                 <div class="fondGraphique">
                     <div class="statistiquesEtTitre">
                         <div class="langages">
-                           <img src="../images/langages.svg" alt="stats">
+                          <img src="../images/Competences/Langages light computer.svg" alt="stats" class="imgw1024">
+                          <img src="../images/Competences/Langages light mobile.svg" alt="stats" class="imgw768">
                         </div>
                         <div class="titre">
                             <h1>LANGUAGES MAÎTRISÉS</h1>
