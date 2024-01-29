@@ -84,8 +84,13 @@ span {
 .langages {
     background: transparent;
 }
-img {
+.imgw1024  {
     background: transparent;
+    display: flex;
+}
+.imgw768 {
+    background: transparent;
+    display: none;
 }
 .titre {
     display: flex;
@@ -197,5 +202,44 @@ img {
     }
     to {
         transform: translateX(-100%);
+    }
+}
+
+/*---------------RESPONSIVE---------------*/
+
+
+@media screen and (max-width: 768px) {  
+
+}
+
+@media screen and (max-width: 1024px) {
+    .competences {
+        padding: 10px;
+    }
+    .biblioApps {
+        gap: 70px;
+    }
+    .cardApp {
+        margin: 20px auto;
+        justify-content: center;
+    }
+    .imgw1024  {
+        display: none;
+    }
+    .imgw768 {
+        display: flex;
+    }
+    .titre {
+        display: none;
+    }
+    .fondGraphique {
+        width: auto;
+    }
+    .graphique {
+        width: auto;
+    } 
+    .titreEtGraphique h1,
+    .titreEtGraphique h2 {
+        line-height: 40px;
     }
 }
