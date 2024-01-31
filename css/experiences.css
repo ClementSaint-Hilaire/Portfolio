@@ -340,7 +340,11 @@ svg {
     }
     .boutons {
         width: auto;
-        margin: 0 auto; 
+        margin: unset; 
+        justify-content: space-evenly;
+    }
+    .boutonL, .boutonR {
+        margin: unset;
     }
     .experiencesProCard{ 
         margin: 0 auto 30px auto;
