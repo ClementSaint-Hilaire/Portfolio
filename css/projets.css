@@ -206,6 +206,7 @@ span {
     background: transparent;
 }
 .visonOsProjetContentText h2 {
+    position: relative;
     text-align: justify;
     font-size: 25px;
     font-weight: 400;
@@ -219,7 +220,6 @@ span {
 }
 .visonOsProjetContentTextHead h1 {
     font-size: 95px;
-    font-weight: 600px;
 }
 .visonOsProjetContent img {
     position: relative;
@@ -351,6 +351,12 @@ span {
 
 /*---------------RESPONSIVE---------------*/
 
+@media screen and (max-width: 600px) {  
+    .visonOsProjetContentTextHead h1 {
+        font-size: 50px;
+    }
+    
+}
 
 @media screen and (max-width: 768px) {  
     .titreEtSousTitre,
@@ -358,17 +364,100 @@ span {
     .crisetool {
         padding: 0px 10px;
     }
+    .visonOsProjetContent img {
+        margin: unset;
+    }
+    .crisetoolContent {
+        margin: unset;
+    }
+    .visonOsProjetContentTextHead h1 {
+        font-size: 70px;
+    }
+    .visonOsProjetContentTextHead {
+        justify-content: space-evenly;
+    }
+    .visonOsProjetContentTextHead svg {
+        width: 40px;
+    }
+    .elementsTextContainer h2 {
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+    .elementsTextContainer h3 {
+        display: none;
+    }
+    .containerImageEtTexte img {
+        width: 450px;
+        margin-bottom: 50px;
+    }
+    .projet {
+        height: auto;
+    }
+    .visonOsProjetContent {
+        margin: 0 50px;
+    }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 980px) {
+    .containerImageEtTexte {
+        flex-direction: column;
+    }
+    .crisetoolContentTextHead h3 {
+        display: none;
+    }
+    .crisetoolContent img {
+        display: none;
+    }
+    .crisetoolContentTextContainer {
+        padding: 150px
+    }
+    .crisetoolContent {
+        margin: unset;
+    }
+    .elementsTextContainer h3 {
+        display: none;
+    } 
+    .visonOsProjetContent {
+        margin: unset;
+    }
+    .visonOsProjetContentTextHead {
+        width: auto;
+    }
+    .ambilightOne {
+        top: 100px;
+    }
+    .projet {
+        height: auto;
+    }
+    .visonOsProjetContent {
+        margin: 0 50px;
+    }
+    .containerTitreEtSousTitre h2 {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 980px) {
     .titreEtSousTitre,
     .visonOsProjet,
     .crisetool {
         padding: 0px 10px;
     }
+    .elementsTextContainer h3 {
+        display: none;
+    } 
+    .visonOsProjetContent {
+        margin: unset;
+    }
+    .visonOsProjetContentTextHead {
+        width: max-content;
+    }
+    .projet {
+        height: auto;
+    }
 }
 
-@media screen and (max-width: 1340px) {
+@media screen and (max-width: 1340px)  {
     .elementsTextContainer h2 {
         font-size: 47px;
     }
@@ -385,9 +474,11 @@ span {
     }
     .visonOsProjet {
         justify-content: center;
+        height: fit-content;
+        margin-top: 150px;
     }
     .visonOsProjetContent {
-        padding: 0 100px 0 100px;
+        margin: 0 100px 0 100px;
     }
     .visonOsProjetContentText h2 {
         margin-top: 40px;
@@ -399,8 +490,7 @@ span {
         font-size: 80px;
     }
     .crisetoolContentTextHead h3 {
-        position: relative;
-        align-self: end;
+        display: none;
     }
     .titreEtSousTitre,
     .visonOsProjet,
