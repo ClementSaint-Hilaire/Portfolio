@@ -47,7 +47,7 @@ span {
     font-size: var(--soustitre);
     font-weight: 400;
     background: transparent;
-
+    text-align: left;
 }
 .projet {
     width: 100%;
@@ -74,7 +74,7 @@ span {
 }
 .containerImageEtTexte img {
     position: relative;
-    height: 95vh;
+    height: 800px;
     margin: 0;
 }
 .footerLientoProjet {
@@ -206,6 +206,7 @@ span {
     background: transparent;
 }
 .visonOsProjetContentText h2 {
+    position: relative;
     text-align: justify;
     font-size: 25px;
     font-weight: 400;
@@ -219,7 +220,6 @@ span {
 }
 .visonOsProjetContentTextHead h1 {
     font-size: 95px;
-    font-weight: 600px;
 }
 .visonOsProjetContent img {
     position: relative;
@@ -347,4 +347,291 @@ span {
     position: absolute;
     bottom: 0;
     right: 0;
+}
+
+/*---------------RESPONSIVE---------------*/
+
+@media screen and (max-width: 500px){  
+    .titreEtSousTitre {
+        padding-left: 10px;
+    }
+    /**quantum**/
+    .containerImageEtTexte {
+        flex-direction: column;
+    }
+    .containerImageEtTexte h3 {
+        display: none;
+    }
+    .containerImageEtTexte h2 {
+        font-size: 35px;
+    }
+    .containerImageEtTexte img {
+        height: 550px;
+    }
+    .footerLientoProjet {
+        margin-top: 70px
+    }  
+    .footerLientoProjet h1 {
+        font-size: 18px;
+    }
+
+    /**vision OS**/
+    .visonOsProjetContent {
+        padding: 0px;
+        flex-direction: column;
+        margin: auto;
+    }
+    .visonOsProjetContent img {
+        width: 340px;
+    }
+    .visonOsProjetContentTextHead {
+        width: auto;
+        margin-top: 90px;
+    }
+    .visonOsProjetContentTextHead svg {
+        width: 25px;
+    }
+    .visonOsProjetContentTextHead h1 {
+        font-size: 50px;
+    }
+    .visonOsProjetContentText h2 {
+        font-size: 20px;
+        padding: 20px;
+    }
+    .visonOsProjetFooter {
+        margin: 0 auto 125px auto;
+    }
+    /**CriseTool**/
+    .crisetoolContent {
+        flex-direction: column;
+    }
+    .crisetoolContent {
+        margin: 200px auto 0 auto;
+        padding: 0px 10px;
+    } 
+    .crisetoolContent img {
+        display: none;
+    }
+    .crisetoolContentTextContainer .crisetoolContentTextHead h2 {
+        font-size: 80px;
+    }
+    .crisetoolContentTextHead h3 {
+        display: none;
+    }
+    .crisetoolContentTextContainer h2 {
+        font-size: 20px;
+    }
+    .crisetoolFooter {
+        margin: 100px auto 200px auto;   
+    }
+    .crisetoolFooter h1 {
+        font-size: 20px;
+    }
+    .ambilightOne {
+        top: 300px
+    }
+}
+@media screen and (max-width: 768px) and (min-width: 500px) {  
+    .titreEtSousTitre {
+        padding-left: 10px;
+    }
+    /**quantum**/
+    .containerImageEtTexte {
+        flex-direction: column;
+    }
+    .containerImageEtTexte h3 {
+        display: none;
+    }
+    .containerImageEtTexte h2 {
+        font-size: 44px;
+    }
+    .containerImageEtTexte img {
+        height: 650px;
+    }
+    .footerLientoProjet {
+        margin-top: 100px
+    }   
+    /**vision OS**/
+    .visonOsProjetContent {
+        padding: 0px;
+        flex-direction: column;
+        margin: auto;
+    }
+    .visonOsProjetContentTextHead {
+        width: auto;
+    }
+    .visonOsProjetContentTextHead svg {
+        width: 25px;
+    }
+    .visonOsProjetContentTextHead h1 {
+        font-size: 50px;
+    }
+    .visonOsProjetContentText h2 {
+        font-size: 20px;
+        padding: 20px;
+    }
+    /**CriseTool**/
+    .crisetoolContent {
+        flex-direction: column;
+    }
+    .crisetoolContent {
+        margin: 200px auto 0 auto;
+        padding: 0px 10px;
+    } 
+    .crisetoolContent img {
+        display: none;
+    }
+    .crisetoolContentTextContainer .crisetoolContentTextHead h2 {
+        font-size: 80px;
+    }
+    .crisetoolContentTextHead h3 {
+        display: none;
+    }
+    .crisetoolContentTextContainer h2 {
+        font-size: 20px;
+        margin: 0px 40px;
+    }
+    .crisetoolFooter {
+        margin: 100px auto 200px auto;   
+    }
+    .ambilightOne {
+        top: 300px
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px){
+    .titreEtSousTitre {
+        padding-left: 10px;
+    }
+    /**quantum**/
+    .containerImageEtTexte {
+        flex-direction: column;
+    }
+    .containerImageEtTexte h3 {
+        display: none;
+    }
+    .containerImageEtTexte h2 {
+        font-size: 44px;
+    }
+    .containerImageEtTexte img {
+        height: 650px;
+    }
+    .footerLientoProjet {
+        margin-top: 100px
+    }
+    /**vision OS**/
+    .visonOsProjetContent {
+        padding: 0px 40px;
+        flex-direction: column;
+        margin: auto;
+    }
+    /**CriseTool**/
+    .crisetoolContent {
+        flex-direction: column;
+    }
+    .crisetoolContent {
+        margin: 200px auto 0 auto;
+        padding: 0px 10px;
+    } 
+    .crisetoolContent img {
+        display: none;
+    }
+    .crisetoolContentTextContainer .crisetoolContentTextHead h2 {
+        font-size: 80px;
+    }
+    .crisetoolContentTextHead h3 {
+        display: none;
+    }
+    .crisetoolContentTextContainer h2 {
+        font-size: 20px;
+        margin: 0px 40px;
+    }
+    .crisetoolFooter {
+        margin: 80px auto 200px auto;   
+    }
+    .ambilightOne {
+        top: 300px
+    }
+}
+@media screen and (max-width: 1200px) and (min-width: 1024px){
+    /**quantum**/
+    .containerImageEtTexte h2 {
+        font-size: 49px;
+    }
+    .containerImageEtTexte img {
+        height: 700px;
+    }
+    /**vision OS**/
+    .visonOsProjetContent {
+        padding: 0px 10px;
+    }
+    .visonOsProjetContent img {
+        width: 420px;
+    }
+    /**CriseTool**/
+    .crisetoolContent {
+        margin: 200px auto 0 auto;
+        padding: 0px 10px;
+    } 
+    .crisetoolContent img {
+        width: 450px;
+    }
+    .crisetoolContentTextContainer .crisetoolContentTextHead h2 {
+        font-size: 80px;
+    }
+    .crisetoolContentTextHead h3 {
+        display: none;
+    }
+    .crisetoolContentTextContainer h2 {
+        font-size: 20px;
+        margin: 0px 20px;
+    }
+    .crisetoolFooter {
+        margin: 80px auto 200px auto;   
+    }
+}
+
+@media screen and (max-width: 1750px) and (min-width: 1200px){
+    /**quantum**/
+    .containerImageEtTexte h2 {
+        font-size: 59px;
+    }
+    .containerImageEtTexte img {
+        height: 800px;
+    }
+    /**vision OS**/
+    /**CriseTool**/
+    .crisetoolContent {
+        margin: 200px auto 0 auto;
+    } 
+}
+
+@media screen and (min-width: 1750px) {
+    /**quantum**/
+    .containerImageEtTexte img {
+        height: 900px;
+    }
+    /**vision OS**/
+    .visonOsProjetContent {
+        margin: 0 auto;
+    }
+    .visonOsProjet {
+        top: 36%;
+    }
+    .visonOsProjetFooter {
+        margin: 100px auto 200px auto;
+    }
+    /**CriseTool**/
+
+}
+
+@media screen and (min-width: 2100px) {
+    /**quantum**/
+    .containerImageEtTexte img {
+        height: 1200px;
+    }
+    /**vision OS**/
+
+    /**CriseTool**/
+
 }
