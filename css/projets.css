@@ -47,7 +47,7 @@ span {
     font-size: var(--soustitre);
     font-weight: 400;
     background: transparent;
-
+    text-align: left;
 }
 .projet {
     width: 100%;
@@ -74,7 +74,7 @@ span {
 }
 .containerImageEtTexte img {
     position: relative;
-    height: 95vh;
+    height: 800px;
     margin: 0;
 }
 .footerLientoProjet {
@@ -351,150 +351,287 @@ span {
 
 /*---------------RESPONSIVE---------------*/
 
-@media screen and (max-width: 600px) {  
-    .visonOsProjetContentTextHead h1 {
-        font-size: 50px;
+@media screen and (max-width: 500px){  
+    .titreEtSousTitre {
+        padding-left: 10px;
     }
-    
-}
-
-@media screen and (max-width: 768px) {  
-    .titreEtSousTitre,
-    .visonOsProjet,
-    .crisetool {
-        padding: 0px 10px;
-    }
-    .visonOsProjetContent img {
-        margin: unset;
-    }
-    .crisetoolContent {
-        margin: unset;
-    }
-    .visonOsProjetContentTextHead h1 {
-        font-size: 70px;
-    }
-    .visonOsProjetContentTextHead {
-        justify-content: space-evenly;
-    }
-    .visonOsProjetContentTextHead svg {
-        width: 40px;
-    }
-    .elementsTextContainer h2 {
-        font-size: 35px;
-        margin-bottom: 30px;
-    }
-    .elementsTextContainer h3 {
-        display: none;
-    }
-    .containerImageEtTexte img {
-        width: 450px;
-        margin-bottom: 50px;
-    }
-    .projet {
-        height: auto;
-    }
-    .visonOsProjetContent {
-        margin: 0 50px;
-    }
-}
-
-@media screen and (max-width: 980px) {
+    /**quantum**/
     .containerImageEtTexte {
         flex-direction: column;
     }
-    .crisetoolContentTextHead h3 {
+    .containerImageEtTexte h3 {
         display: none;
     }
-    .crisetoolContent img {
-        display: none;
+    .containerImageEtTexte h2 {
+        font-size: 35px;
     }
-    .crisetoolContentTextContainer {
-        padding: 150px
+    .containerImageEtTexte img {
+        height: 550px;
     }
-    .crisetoolContent {
-        margin: unset;
+    .footerLientoProjet {
+        margin-top: 70px
+    }  
+    .footerLientoProjet h1 {
+        font-size: 18px;
     }
-    .elementsTextContainer h3 {
-        display: none;
-    } 
+
+    /**vision OS**/
     .visonOsProjetContent {
-        margin: unset;
+        padding: 0px;
+        flex-direction: column;
+        margin: auto;
+    }
+    .visonOsProjetContent img {
+        width: 340px;
     }
     .visonOsProjetContentTextHead {
         width: auto;
+        margin-top: 90px;
     }
-    .ambilightOne {
-        top: 100px;
+    .visonOsProjetContentTextHead svg {
+        width: 25px;
     }
-    .projet {
-        height: auto;
-    }
-    .visonOsProjetContent {
-        margin: 0 50px;
-    }
-    .containerTitreEtSousTitre h2 {
-        text-align: left;
-    }
-}
-
-@media screen and (max-width: 1024px) and (min-width: 980px) {
-    .titreEtSousTitre,
-    .visonOsProjet,
-    .crisetool {
-        padding: 0px 10px;
-    }
-    .elementsTextContainer h3 {
-        display: none;
-    } 
-    .visonOsProjetContent {
-        margin: unset;
-    }
-    .visonOsProjetContentTextHead {
-        width: max-content;
-    }
-    .projet {
-        height: auto;
-    }
-}
-
-@media screen and (max-width: 1340px)  {
-    .elementsTextContainer h2 {
-        font-size: 47px;
-    }
-    .containerImageEtTexte img {
-        height: 75vh;
-    }
-    .visonOsProjetContent {
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-        }
-    .visonOsProjetFooter {
-        margin: 40px auto 50px auto;
-    }
-    .visonOsProjet {
-        justify-content: center;
-        height: fit-content;
-        margin-top: 150px;
-    }
-    .visonOsProjetContent {
-        margin: 0 100px 0 100px;
+    .visonOsProjetContentTextHead h1 {
+        font-size: 50px;
     }
     .visonOsProjetContentText h2 {
-        margin-top: 40px;
+        font-size: 20px;
+        padding: 20px;
     }
+    .visonOsProjetFooter {
+        margin: 0 auto 125px auto;
+    }
+    /**CriseTool**/
+    .crisetoolContent {
+        flex-direction: column;
+    }
+    .crisetoolContent {
+        margin: 200px auto 0 auto;
+        padding: 0px 10px;
+    } 
     .crisetoolContent img {
-        width: 500px;
+        display: none;
     }
-    .crisetoolContentTextHead h2 {
+    .crisetoolContentTextContainer .crisetoolContentTextHead h2 {
         font-size: 80px;
     }
     .crisetoolContentTextHead h3 {
         display: none;
     }
-    .titreEtSousTitre,
-    .visonOsProjet,
-    .crisetool {
+    .crisetoolContentTextContainer h2 {
+        font-size: 20px;
+    }
+    .crisetoolFooter {
+        margin: 100px auto 200px auto;   
+    }
+    .crisetoolFooter h1 {
+        font-size: 20px;
+    }
+    .ambilightOne {
+        top: 300px
+    }
+}
+@media screen and (max-width: 768px) and (min-width: 500px) {  
+    .titreEtSousTitre {
+        padding-left: 10px;
+    }
+    /**quantum**/
+    .containerImageEtTexte {
+        flex-direction: column;
+    }
+    .containerImageEtTexte h3 {
+        display: none;
+    }
+    .containerImageEtTexte h2 {
+        font-size: 44px;
+    }
+    .containerImageEtTexte img {
+        height: 650px;
+    }
+    .footerLientoProjet {
+        margin-top: 100px
+    }   
+    /**vision OS**/
+    .visonOsProjetContent {
+        padding: 0px;
+        flex-direction: column;
+        margin: auto;
+    }
+    .visonOsProjetContentTextHead {
+        width: auto;
+    }
+    .visonOsProjetContentTextHead svg {
+        width: 25px;
+    }
+    .visonOsProjetContentTextHead h1 {
+        font-size: 50px;
+    }
+    .visonOsProjetContentText h2 {
+        font-size: 20px;
+        padding: 20px;
+    }
+    /**CriseTool**/
+    .crisetoolContent {
+        flex-direction: column;
+    }
+    .crisetoolContent {
+        margin: 200px auto 0 auto;
+        padding: 0px 10px;
+    } 
+    .crisetoolContent img {
+        display: none;
+    }
+    .crisetoolContentTextContainer .crisetoolContentTextHead h2 {
+        font-size: 80px;
+    }
+    .crisetoolContentTextHead h3 {
+        display: none;
+    }
+    .crisetoolContentTextContainer h2 {
+        font-size: 20px;
+        margin: 0px 40px;
+    }
+    .crisetoolFooter {
+        margin: 100px auto 200px auto;   
+    }
+    .ambilightOne {
+        top: 300px
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px){
+    .titreEtSousTitre {
+        padding-left: 10px;
+    }
+    /**quantum**/
+    .containerImageEtTexte {
+        flex-direction: column;
+    }
+    .containerImageEtTexte h3 {
+        display: none;
+    }
+    .containerImageEtTexte h2 {
+        font-size: 44px;
+    }
+    .containerImageEtTexte img {
+        height: 650px;
+    }
+    .footerLientoProjet {
+        margin-top: 100px
+    }
+    /**vision OS**/
+    .visonOsProjetContent {
+        padding: 0px 40px;
+        flex-direction: column;
+        margin: auto;
+    }
+    /**CriseTool**/
+    .crisetoolContent {
+        flex-direction: column;
+    }
+    .crisetoolContent {
+        margin: 200px auto 0 auto;
+        padding: 0px 10px;
+    } 
+    .crisetoolContent img {
+        display: none;
+    }
+    .crisetoolContentTextContainer .crisetoolContentTextHead h2 {
+        font-size: 80px;
+    }
+    .crisetoolContentTextHead h3 {
+        display: none;
+    }
+    .crisetoolContentTextContainer h2 {
+        font-size: 20px;
+        margin: 0px 40px;
+    }
+    .crisetoolFooter {
+        margin: 80px auto 200px auto;   
+    }
+    .ambilightOne {
+        top: 300px
+    }
+}
+@media screen and (max-width: 1200px) and (min-width: 1024px){
+    /**quantum**/
+    .containerImageEtTexte h2 {
+        font-size: 49px;
+    }
+    .containerImageEtTexte img {
+        height: 700px;
+    }
+    /**vision OS**/
+    .visonOsProjetContent {
         padding: 0px 10px;
     }
+    .visonOsProjetContent img {
+        width: 420px;
+    }
+    /**CriseTool**/
+    .crisetoolContent {
+        margin: 200px auto 0 auto;
+        padding: 0px 10px;
+    } 
+    .crisetoolContent img {
+        width: 450px;
+    }
+    .crisetoolContentTextContainer .crisetoolContentTextHead h2 {
+        font-size: 80px;
+    }
+    .crisetoolContentTextHead h3 {
+        display: none;
+    }
+    .crisetoolContentTextContainer h2 {
+        font-size: 20px;
+        margin: 0px 20px;
+    }
+    .crisetoolFooter {
+        margin: 80px auto 200px auto;   
+    }
+}
+
+@media screen and (max-width: 1750px) and (min-width: 1200px){
+    /**quantum**/
+    .containerImageEtTexte h2 {
+        font-size: 59px;
+    }
+    .containerImageEtTexte img {
+        height: 800px;
+    }
+    /**vision OS**/
+    /**CriseTool**/
+    .crisetoolContent {
+        margin: 200px auto 0 auto;
+    } 
+}
+
+@media screen and (min-width: 1750px) {
+    /**quantum**/
+    .containerImageEtTexte img {
+        height: 900px;
+    }
+    /**vision OS**/
+    .visonOsProjetContent {
+        margin: 0 auto;
+    }
+    .visonOsProjet {
+        top: 36%;
+    }
+    .visonOsProjetFooter {
+        margin: 100px auto 200px auto;
+    }
+    /**CriseTool**/
+
+}
+
+@media screen and (min-width: 2100px) {
+    /**quantum**/
+    .containerImageEtTexte img {
+        height: 1200px;
+    }
+    /**vision OS**/
+
+    /**CriseTool**/
+
 }

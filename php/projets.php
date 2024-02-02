@@ -37,7 +37,6 @@
         </div>
 
     </section>
-
     <section class="projet">
         <div class="visonOsProjet">
             <div class="visonOsProjetContent">
@@ -65,7 +64,6 @@
             </div>
         </div>
     </section>
-
     <section class="projet">
 
         <div class="crisetool">
@@ -89,7 +87,6 @@
         </div>
 
     </section>
-
 
     <?php include 'composants/footer.html'; ?>
 
