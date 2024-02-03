@@ -251,3 +251,58 @@ span {
     justify-content: center;
     align-items: center;
 }
+
+
+/*---------------RESPONSIVE---------------*/
+
+
+@media screen and (max-width: 390px) {
+    .titre {
+        padding: 0px 10px;
+    }
+    .formulaireDeContact {
+        width: 380px;
+        height: 750px;
+    }
+    .formulaireDeContactMessageBox {
+        height: 360px;
+    }
+    .formulaireDeContactMessageBox textarea {
+        height: 350px;
+    }
+    .boutonEnvoyer {
+        width: 320px;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 390px) {  
+    .titre {
+        padding: 0px 10px;
+    }
+    .formulaireDeContact {
+        width: 380px;
+        height: 750px;
+    }
+    .formulaireDeContactMessageBox {
+        height: 360px;
+    }
+    .formulaireDeContactMessageBox textarea {
+        height: 350px;
+    }
+    .boutonEnvoyer {
+        width: 320px;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px){
+    .titre {
+        padding: 0px 10px;
+    }
+    .formulaireDeContact {
+        width: 750px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+}
