@@ -218,6 +218,15 @@
         position: absolute;
         background: transparent;
      }
+     .logo a {
+        display: flex;
+        position: relative;
+        background: transparent;
+        color: rgba(240, 240, 240, 0.60);
+        font-size: 40px;
+        font-weight: 700;
+        text-decoration: none;
+     }
      .navLightMobile {
         display: flex;
      }
