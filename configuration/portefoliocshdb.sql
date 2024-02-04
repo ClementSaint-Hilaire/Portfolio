@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : dim. 28 jan. 2024 à 08:48
+-- Généré le : sam. 03 fév. 2024 à 14:56
 -- Version du serveur : 8.2.0
 -- Version de PHP : 8.2.13
 
@@ -130,7 +130,7 @@ CREATE TABLE IF NOT EXISTS `xpcard` (
 --
 
 INSERT INTO `xpcard` (`id`, `linkimg`, `categorie`, `titre`, `liensite`, `date`) VALUES
-(2, '../images/Xp/indeauville.svg', 'Relation client', 'Conseillé en séjour en office de tourisme pour « InDeauville ».', 'https://www.indeauville.fr', 'étés  2023-2024'),
+(2, '../images/Xp/indeauville.svg', 'Relation client', 'Conseillé en séjour en office de tourisme pour « InDeauville ».', 'https://www.indeauville.fr', 'étés  2022-2023'),
 (3, '../images/Xp/tradart.svg', 'Vente & estimation', 'Stagiaire dans la SARL « TRADART » auprès du commissaire priseur James Fattori.\r\n', 'https://www.indeauville.fr/boutiques/tradart-deauville', 'Juin 2017'),
 (4, '../images/Xp/avocat.svg', 'Assitance, secrétariat', 'Stagiaire au cabinet d’avocat SELARL Jean-Pimor, auprès d’avocats mandataires au tribunal de commerce.', 'https://www.jean-pimor-avocats.fr', 'Octobre  2022'),
 (1, '../images/Xp/ccccf.svg', 'Développement, réseaux, support', 'Dev junior et apprentis technicien d’exploitation pour la communauté de commune « Coeur Côte Fleurie ».', 'https://www.coeurcotefleurie.org', 'années 2023-2024');

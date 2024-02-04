@@ -141,14 +141,14 @@ span {
     background: rgba(255, 255, 255, 0.25);
     padding: 0 13px;
     margin: 20px 28px;
-    transition: height smooth 2s;
+    transition: height 3s ease;
 }
 .cardApp:hover {
     height: fit-content;
 }
 .faceTwo {
     display: none; 
-    transition: display 1s;
+    transition: display 3s ease;
 }
 .cardApp:hover .faceTwo {
     display: flex; 
@@ -191,7 +191,6 @@ span {
     line-height: 20px; 
     background: none;
 }
-
 
 
 /*-------------animation-------------*/
