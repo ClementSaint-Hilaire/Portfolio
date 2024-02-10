@@ -20,12 +20,7 @@
         <div class="experiencesProCard" id="container">
 
             <?php
-                try {
-                    $db = new PDO('mysql:host=localhost;dbname=portefoliocshdb;charset=utf8;', 'root', '');
-                    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                } catch (PDOException $e) {
-                    die('Erreur de connexion à la bdd : ' . $e->getMessage());
-                }
+               include '../configuration/database.php';
 
                 $query = $db->prepare("SELECT * FROM xpcard ORDER BY id ASC");
 
@@ -75,12 +70,7 @@
     </section>
 
  <?php
-    try {
-        $db = new PDO('mysql:host=localhost;dbname=portefoliocshdb;charset=utf8;', 'root', '');
-        $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    } catch (PDOException $e) {
-        die('Erreur de connexion à la bdd : ' . $e->getMessage());
-    }
+    include '../configuration/database.php';
     
     $query2 = $db->prepare("SELECT * FROM ecoles ORDER BY id ASC");
 
