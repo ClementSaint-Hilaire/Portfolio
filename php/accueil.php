@@ -20,7 +20,7 @@
                 <img src="../images/profilePicture.svg" alt="photo de profil">
         </div>
         <div class="boutons">
-            <a href="#" class="boutonNoir">
+            <a href="../images/Acceuil/CV Clément Saint-Hilaire.pdf" target="_blank" class="boutonNoir">
                 <h1>Télécharger mon CV</h1>
             </a>
             <a href="contact.php" class="boutonBlanc">
