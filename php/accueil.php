@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../images/logo.png" />
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/accueil.css">  
     <title>csh</title>
@@ -20,7 +21,7 @@
                 <img src="../images/profilePicture.svg" alt="photo de profil">
         </div>
         <div class="boutons">
-            <a href="#" class="boutonNoir">
+            <a href="../images/Acceuil/CV Clément Saint-Hilaire.pdf" target="_blank" class="boutonNoir">
                 <h1>Télécharger mon CV</h1>
             </a>
             <a href="contact.php" class="boutonBlanc">

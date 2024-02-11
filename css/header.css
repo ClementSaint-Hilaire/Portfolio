@@ -85,6 +85,7 @@
     border-radius: 30px;
     border: 1px solid rgba(255, 255, 255, 0.25);
     background: rgba(255, 255, 255, 0.25);
+    -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
 }
 .textNavbar {
@@ -161,11 +162,12 @@
     height: 60px;
     border-radius: 30px;
     border: 1px solid rgba(255, 255, 255, 0.25);
-    background: rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.50);
     align-items: center;
     justify-content: space-evenly;
     padding-top: 5px;
     z-index: 100;
+    -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
 }
 .navLightMobile a {

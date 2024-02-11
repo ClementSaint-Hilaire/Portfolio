@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../images/logo.png" />
     <link rel="stylesheet" href="../css/projets.css">  
     <title>csh</title>
 </head>
@@ -54,7 +55,7 @@
                         </svg>
                         <h1>Vision OS</h1>
                       </div>
-                      <h2>À la suite de la sortie de l’Apple Vision pro, il m’a paru clair que la réalité mixte ferait un jour parti de nos vies. Dans cette optique, je cherche par ce projet à m’entraîner sur le fonctionnement de l'esthétique spatial.</h2>
+                      <h2>À la suite de la sortie de l’Apple Vision pro, il m’a paru clair que la réalité mixte ferait un jour partie de nos vies. Dans cette optique, je cherche par ce projet à m’entraîner sur le fonctionnement de l'esthétique spatial.</h2>
                 </div>
                 <img src="../images/Projets/VisionPro.svg" alt="Apple Vision Pro">
             </div>
@@ -76,7 +77,7 @@
                         <h2>CriseTool</h2>
                         <h3>made by csh</h3>
                     </div>
-                    <h2>Projet réalisé pour la Communauté de Communes Coeur Côte Fleurie dans le cadre du développement d'un outil interne de gestion de crise.</h2>
+                    <h2>Projet réalisé pour la Communauté de Communes Cœur Côte Fleurie dans le cadre du développement d'un outil interne de gestion de crise.</h2>
                 </div>
             </div>
             <div class="crisetoolFooter">
