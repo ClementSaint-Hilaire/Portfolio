@@ -52,6 +52,7 @@ span {
 .projet {
     width: 100%;
     height: 105vh;  
+    min-height: 1000px;
 }
 
 /************quantum computer************/
@@ -63,6 +64,7 @@ span {
     flex-direction: column;
     background-color: #000;
     height: 105vh;
+    min-height: 1000px;
 }
 .containerImageEtTexte {
     position: relative;
@@ -355,9 +357,13 @@ span {
     .titreEtSousTitre {
         padding-left: 10px;
     }
+    .projet {
+        min-height: unset;
+    }
+    
     /**quantum**/
-    .containerImageEtTexte {
-        flex-direction: column;
+    .quantumContainer {
+        min-height: unset;
     }
     .containerImageEtTexte h3 {
         display: none;
@@ -434,8 +440,15 @@ span {
 @media screen and (max-width: 768px) and (min-width: 500px) {  
     .titreEtSousTitre {
         padding-left: 10px;
+    }    
+    .projet {
+        min-height: unset;
     }
+    
     /**quantum**/
+    .quantumContainer {
+        min-height: unset;
+    }
     .containerImageEtTexte {
         flex-direction: column;
     }
@@ -503,7 +516,14 @@ span {
     .titreEtSousTitre {
         padding-left: 10px;
     }
+    .projet {
+        min-height: 800px;
+    }
+
     /**quantum**/
+    .quantumContainer {
+        min-height: 900px;
+    }
     .containerImageEtTexte {
         flex-direction: column;
     }
