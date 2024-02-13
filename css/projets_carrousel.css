@@ -1,0 +1,95 @@
+@import url('chillax.css');
+
+:root {
+    --blanc : #F0F0F0;
+    --noir : #0D0D0D;
+    --gris : #808080;
+    --bleu: #0A84FF;
+    --neomorphDrop : 18px 18px 30px 0px #D1D9E6, -18px -18px 30px 0px #FFF;
+    --titre : 53px;
+    --soustitre : 15px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--blanc);
+    color: var(--noir);
+    font-family: 'Chillax-Variable';
+}
+
+
+.carousel {
+    height: fit-content;
+    width: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carousselContainer {
+    position: relative;
+
+}
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 600px;
+    margin: 50px auto;
+}
+svg {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+.card h1 {
+    position: relative;
+    margin: 30px 20px;
+    color : var(--blanc);
+    font-weight: 700;
+    font-size: 15px;
+    background: transparent;
+}
+span {
+    color : var(--gris);
+    font-weight: 600;
+    background: transparent;
+}
+.footerCard {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 410px 20px 0;
+    align-items: center;
+    background: transparent;
+}
+.footerCard h2 {
+    position: relative;
+    color : var(--blanc);
+    font-weight: 700;
+    font-size: 15px;
+    background: transparent;
+}
+.boutonFigma,
+.boutonGithub {
+    position: relative;
+    width: 70px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background-color: var(--bleu);
+}
+.boutonFigma img,
+.boutonGithub img {
+    background: transparent;
+}
+
+
+.boutonGithub {
+    background-color: #000;
+}
