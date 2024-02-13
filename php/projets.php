@@ -89,7 +89,14 @@
 
     </section>
 
-    <?php include 'composants/footer.html'; ?>
+
+
+    <!-- Caroussel des petits projets -->
+
+    <?php 
+        include 'projets_carrousel.php';
+        include 'composants/footer.html'; 
+    ?>
 
 </body>
 </html>
