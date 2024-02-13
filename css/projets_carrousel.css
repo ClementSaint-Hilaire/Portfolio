@@ -31,7 +31,7 @@
     position: relative;
 
 }
-.card {
+.cardProjets {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -39,13 +39,13 @@
     height: 600px;
     margin: 50px auto;
 }
-svg {
+.cardProjets svg {
     position: absolute;
     display: flex;
     width: 100%;
     height: auto;
 }
-.card h1 {
+.cardProjets h1 {
     position: relative;
     margin: 30px 20px;
     color : var(--blanc);
@@ -59,8 +59,10 @@ span {
     background: transparent;
 }
 .footerCard {
-    position: relative;
+    position: absolute;
     display: flex;
+    bottom: 20px;
+    width: 360px;
     justify-content: space-between;
     margin: 410px 20px 0;
     align-items: center;
@@ -84,12 +86,10 @@ span {
     border-radius: 30px;
     background-color: var(--bleu);
 }
+.boutonGithub {
+    background-color: #000;
+}
 .boutonFigma img,
 .boutonGithub img {
     background: transparent;
-}
-
-
-.boutonGithub {
-    background-color: #000;
 }

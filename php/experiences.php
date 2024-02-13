@@ -67,7 +67,7 @@
         <div class="boutons">
                 <img src="../images/buttonL.svg" class="boutonL">
                 <img src="../images/buttonR.svg" class="boutonR">
-            </div>
+        </div>
     </section>
 
  <?php
