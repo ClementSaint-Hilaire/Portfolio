@@ -523,7 +523,7 @@ span {
     .visonOsProjetContent {
         padding: 0px 40px;
         flex-direction: column;
-        margin: auto;
+        margin: 50% auto;
     }
     /**CriseTool**/
     .crisetoolContent {
