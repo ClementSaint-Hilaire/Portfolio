@@ -28,6 +28,8 @@
                     </div>
                 </div>
             </div>
+            <img src="../images/Competences/competences.png" alt="compétences pour M. Morin" class="compt">
+
         </div>
 
        
@@ -53,6 +55,7 @@
                 <img src="../images/rond.svg">
             </div>
     </div>
+
 
     <?php
         // try {
