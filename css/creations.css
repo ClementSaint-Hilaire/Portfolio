@@ -1,5 +1,4 @@
-@import url('satoshi.css');
-*:root {
+:root {
     --deepnoir : #000;
     --noir: #1D1D1F;
     --gris: #75757A;
@@ -12,7 +11,7 @@
     margin: 0;
     box-sizing: border-box;
     background-color: var(--deepnoir);
-    font-family: 'Satoshi-Medium';
+    font-family: 'Chillax-Variable';
 }
 body {
     overflow-x: hidden;
@@ -31,7 +30,7 @@ body {
 .cards {
     max-width: 600px;
     max-height: 600px;
-    background-color: var(--noir);
+    background-color: var(--blanc2);
     display: flex;
     flex-direction: column;
     border-radius: 26px;
@@ -39,12 +38,12 @@ body {
     text-decoration: none;
     font-size: 1.4rem;
     color: var(--gris);
-    font-family: 'Satoshi-Light';
+    font-family: 'Chillax-Medium';
     overflow: hidden;
 }
 .cards:hover {
     transition: ease 1s;
-    background-color: var(--blanc1);
+    background-color: var(--noir);
 }
 .cards img {
     position: relative;
@@ -69,7 +68,7 @@ body {
     text-decoration: none;
     font-size: 1.4rem;
     color: var(--gris);
-    font-family: 'Satoshi-Light';
+    font-family: 'Chillax-Medium';
     overflow: hidden;
     background: transparent;
 }
