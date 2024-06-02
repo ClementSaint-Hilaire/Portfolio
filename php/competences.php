@@ -28,6 +28,8 @@
                     </div>
                 </div>
             </div>
+            <img src="../images/Competences/competences.png" alt="compétences pour M. Morin" class="compt">
+
         </div>
 
        
@@ -54,13 +56,15 @@
             </div>
     </div>
 
+
     <?php
-        try {
-            $db = new PDO('mysql:host=clemezalibrecour.mysql.db;dbname=clemezalibrecour;charset=utf8;', 'clemezalibrecour', 'HZyvey267Ehce');
-            $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        } catch (PDOException $e) {
-            die('Erreur de connexion à la bdd : ' . $e->getMessage());
-        }
+        // try {
+        //     $db = new PDO('mysql:host=clemezalibrecour.mysql.db;dbname=clemezalibrecour;charset=utf8;', 'clemezalibrecour', 'HZyvey267Ehce');
+        //     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        // } catch (PDOException $e) {
+        //     die('Erreur de connexion à la bdd : ' . $e->getMessage());
+        // }
+        include '../configuration/database.php';
 
         $query = $db->prepare("SELECT * FROM appcard");
 

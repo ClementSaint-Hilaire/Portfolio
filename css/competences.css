@@ -88,6 +88,13 @@ span {
     background: transparent;
     display: flex;
 }
+.compt {
+    position: relative;
+    display: flex;
+    width: 1020px;
+    max-width: 1020px;
+    height: auto;
+}
 .imgw768 {
     background: transparent;
     display: none;
